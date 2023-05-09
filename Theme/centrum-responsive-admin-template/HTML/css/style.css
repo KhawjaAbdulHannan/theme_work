@@ -455,12 +455,13 @@ ul.top-header-btns > li > a span {
 }
 /* === Search === */
 form.console-search {
+      margin-bottom: 10px;
       margin-right: 10px;
       border: 1px solid #d8d8d8;
       height: 35px;
       position: relative;
       display: flex;
-      width: 220px;
+      width: 100%;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       border-radius: 5px;
@@ -912,14 +913,14 @@ aside.console-sidemenu.coloured .user *{ color: #FFF }
 .theme-content.narrow-menu .console-sidemenu.coloured ul.console-menu li{ border-bottom-color: rgba(255,255,255,0.2)}
 /*=============== More Options Panel ===================*/
 aside.more-opt-panel {
-      margin-right: -400px;
+      margin-left: -500px;
       background: #fff;
       order: 3;
       position: absolute;
-      right: 0;
+      left: 0;
       padding:20px;
       bottom: 0;
-      width: 400px;
+      width: 500px;
       z-index: 100;
       height: 100%;
       -webkit-box-shadow: -1px 0 19px 2px rgba(52, 52, 52, 0.09);
@@ -934,7 +935,7 @@ aside.more-opt-panel {
       -o-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
       transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
 }
-aside.more-opt-panel.active{ margin-right:0 }
+aside.more-opt-panel.active{ margin-left:0 }
 /*=============== Content Area ===================*/
 .content-area {
       flex: auto;
@@ -4792,3 +4793,20 @@ div#toparea {
  @media screen and (max-width: 640px) {
    h1{font-size:48px;line-height:56px;}
  }
+
+.main-header{
+      margin-left: 10px;
+      margin-bottom: 10px;
+}
+.arrow-button{
+  position: fixed;
+  border: none;
+  color: blue;
+  top: 50%;
+  left: 1%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  transition: left 0.5s;
+}

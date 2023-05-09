@@ -45,6 +45,12 @@ $(window).on("load", function(){
 
       $(document).on("click", ".content-area > div", function(){
             $(".more-opt-panel").removeClass('active');
+            if ($(".arrow-button").html()==='&lt;'){
+                  $(".arrow-button").html('>')
+                  $(".arrow-button").css({
+                        "left": "1%"
+                   })
+            }
       });
       // ========== Sidemenu Functions Ends ============ //
 
@@ -58,6 +64,22 @@ $(window).on("load", function(){
       $("body").on("click", ".more-opt-open", function(){
             $(".more-opt-panel").toggleClass('active');
       });
+      $("body").on("click", ".arrow-button", function(){
+            $(".more-opt-panel").toggleClass('active');
+            if ($(this).html()=== '&gt;'){
+             $(this).html('<')
+             $(this).css({
+                  "left": "25%"
+             })
+            }
+            else{
+            $(this).html('>')
+            $(this).css({
+                  "left": "1%"
+             })
+            }
+      });
+      
 
 
       // ========== Grid Stack Initialization ============ //
@@ -427,30 +449,7 @@ $(window).on("load", function(){
 
 
       // ===== Disable Code Inspection =====//
-      document.onkeydown = function(e) {
-            if(event.keyCode == 123) {
-                  return false;
-            }
-            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
-                  return false;
-            }
-            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
-                  return false;
-            }
-            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
-                  return false;
-            }
-      }
-
-      if (document.addEventListener) {
-            document.addEventListener('contextmenu', function(e) {
-                  e.preventDefault();
-            }, false);
-      } else {
-            document.attachEvent('oncontextmenu', function() {
-                  window.event.returnValue = false;
-            });
-      }
+ 
       // ===== Disable Code Inspection =====//
 
 
