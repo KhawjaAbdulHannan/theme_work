@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Centrum - Bootstrap4 Responsive Admin Dashboard Template </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/grid_stack.min.css" />
+	<link rel="stylesheet" href="js/plugins/jquery_confirm/jquery_confirm.css">
+	<link rel="stylesheet" href="js/plugins/colorpicker/bootstrap-colorpicker-plus.min.css">
+	<link rel="stylesheet" href="js/plugins/scrollbar/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="js/plugins/intro-tour/introjs.min.css">
+	<link rel="stylesheet" href="js/plugins/intro-tour/themes/introjs-modern.css">
+	<link rel="stylesheet" href="js/plugins/datepicker/datepicker.css">
+
+
+	<link rel="stylesheet" type="text/css" href="css/dripicon.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+</head>
+<body class="theme-body">
+	<div class="theme-wrapper">
+		<header></header><!-- Header -->
+
+		<div class="theme-content">
+			<aside class="console-sidemenu active" id="sidemenu"  ></aside><!-- Console Sidemenu -->
+
+			<div class="content-area">
+				<div id="toparea" class="style1"></div>
+
+				<div class="grid-stack gs-area">
+					<div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="3" data-gs-height="7"  data-gs-min-height="7"  data-gs-min-width="3">
+						<div class="console-panel grid-stack-item-content console-no-header" >
+							<div class="console-panel-body align-center">
+								<div class="console-stats">
+									<h5>TOTAL INCOME</h5>
+									<span class="sparklines" data-sparkType="bar" data-sparkBarColor="#6794dc" data-sparkBarWidth="5"  data-sparkHeight="40"> 5,8,9,3,6,8,9,3,1,6,8,9,5,6 </span>
+									<div class="stats-num">13,956 </div>
+									<i>18.2% higher vs previous month</i>
+								</div>
+							</div>
+						</div><!-- Console Panel -->
+					</div>
+
+
+					<div class="grid-stack-item" data-gs-x="3" data-gs-y="0" data-gs-width="3" data-gs-height="7"   data-gs-min-height="7"  data-gs-min-width="2">
+						<div class="console-panel grid-stack-item-content  console-no-header">
+							<div class="console-panel-body-noscroll">
+								<div class="console-stats">
+									<h5>WEEKLY STATUS</h5>
+									<div class="stats-num">13,956 </div>
+									<i>18.2% higher vs previous month</i>
+								</div>
+								<div  class="cover-bottom">
+									<canvas id="linechart1" width="100" height="100"></canvas>
+								</div>
+							</div>
+						</div><!-- Console Panel -->
+					</div>
+
+
+					<div class="grid-stack-item" data-gs-x="6" data-gs-y="0" data-gs-width="3" data-gs-height="18"   data-gs-min-height="10"  data-gs-min-width="3">
+						<div class="console-panel grid-stack-item-content">
+							<div class="console-panel-header">
+								<div class="cph-left">
+									<h5>Website Audience Metrics</h5>
+									<span>Based on 100% of sessions.</span>
+								</div>
+								<div class="cph-right">
+									<ul class="top-header-btns">
+										<li><a class="collapse-panel" href="#" title="Collapse/Uncollapse Panel"   data-rel="tooltip" > <i class="icon dripicons-chevron-up"></i></a></li>
+										<li class="dropdown">
+											<a href="#" data-toggle="dropdown" title="Panel Options"    data-rel="tooltip"> <i class="icon dripicons-dots-3"></i></a>
+											<div class="dropdown-menu  dropdown-menu-right theme-media">
+												<div class="dropdown-menu-header"> <div class="dmh-inner"> <h4>Panel Options</h4> </div> </div>
+												<a class="dropdown-item cp" href="#" title=""> <span class="color-fill-icon" style="background-color:#fff;"></span> Header Background Color</a>
+												<a class="dropdown-item header-fontcolor" href="#" title=""> <span class="color-fill-icon"  style="background-color:#333" ></span> Header Font Color Dark/Light</a>
+											</div>
+										</li>
+										<li><a class="removeWidget" href="#" title="Remove Panel"    data-rel="tooltip"> <i class="icon dripicons-cross"></i> </a></li>
+									</ul>
+								</div>
+							</div><!-- Panel Header -->
+							<div class="console-panel-body ">
+								<div class="chart-container">
+									<canvas id="donutchart1" width="100" height="95"></canvas>
+								</div>
+								<div class="console-stats">
+									<h5>TOTAL INCOME</h5>
+									<i>18.2% higher vs previous month</i>
+								</div>
+							</div>
+						</div><!-- Console Panel -->
+					</div>
+
+					<div class="grid-stack-item" data-gs-x="9" data-gs-y="0" data-gs-width="3" data-gs-height="18" data-gs-min-height="7"  data-gs-min-width="2">
+						<div class="console-panel grid-stack-item-content">
+							<div class="console-panel-header">
+								<div class="cph-left">
+									<h5>Tasks Progress</h5>
+									<span>Resource On Site</span>
+								</div>
+								<div class="cph-right">
+									<ul class="top-header-btns">
+										<!-- <li><a class="collapse-panel" href="#" title="Collapse/Uncollapse Panel"   data-rel="tooltip" > <i class="icon dripicons-chevron-up"></i></a></li> -->
+										<li class="dropdown">
+											<a href="#" data-toggle="dropdown" title="Panel Options"    data-rel="tooltip"> <i class="icon dripicons-dots-3"></i></a>
+											<div class="dropdown-menu  dropdown-menu-right theme-media">
+												<div class="dropdown-menu-header"> <div class="dmh-inner"> <h4>Panel Options</h4> </div> </div>
+												<a class="dropdown-item cp" href="#" title=""> <span class="color-fill-icon" style="background-color:#fff;"></span> Header Background Color</a>
+												<a class="dropdown-item header-fontcolor" href="#" title=""> <span class="color-fill-icon"  style="background-color:#333" ></span> Header Font Color Dark/Light</a>
+											</div>
+										</li>
+										<li><a class="removeWidget" href="#" title="Remove Panel"    data-rel="tooltip"> <i class="icon dripicons-cross"></i> </a></li>
+									</ul>
+								</div>
+							</div><!-- Panel Header -->
+							<div class="console-panel-body">
+								<div class="progress-item">
+									<div> <span>Email</span> <span>987 <span>(20%)</span></span> </div>
+									<div class="progress">
+										<div class="progress-bar bg-primary" style="width:20%"></div>
+									</div><!-- progress -->
+								</div>
+								<div class="progress-item">
+									<div><span>Organic Search</span><span>1,320 <span>(25%)</span></span></div>
+									<div class="progress">
+										<div class="progress-bar bg-danger" style="width:25%"></div>
+									</div><!-- progress -->
+								</div>
+								<div class="progress-item">
+									<div> <span>Referral</span> <span>2,010 <span>(30%)</span></span> </div>
+									<div class="progress">
+										<div class="progress-bar bg-warning " style="width:30%"></div>
+									</div><!-- progress -->
+								</div>
+								<div class="progress-item">
+									<div> <span>Social</span> <span>654 <span>(15%)</span></span> </div>
+									<div class="progress">
+										<div class="progress-bar bg-info " style="width:15%"></div>
+									</div><!-- progress -->
+								</div>
+								<div class="progress-item">
+									<div><span>Organic Search</span><span>1,320 <span>(25%)</span></span></div>
+									<div class="progress">
+										<div class="progress-bar bg-success" style="width:25%"></div>
+									</div><!-- progress -->
+								</div>
+								<div class="progress-item">
+									<div><span>Other</span><span>400 <span>(10%)</span></span></div>
+									<div class="progress">
+										<div class="progress-bar bg-secondary " style="width:10%"></div>
+									</div><!-- progress -->
+								</div>
+								<div class="progress-item">
+									<div> <span>Email</span> <span>987 <span>(20%)</span></span> </div>
+									<div class="progress">
+										<div class="progress-bar bg-dark" style="width:20%"></div>
+									</div><!-- progress -->
+								</div>
+							</div>
+						</div><!-- Console Panel -->
+					</div>
+
+
+					<div class="grid-stack-item" data-gs-x="0" data-gs-y="7" data-gs-width="6" data-gs-height="22" data-gs-min-height="10"  data-gs-min-width="4">
+						<div class="console-panel grid-stack-item-content">
+							<div class="console-panel-header">
+								<div class="cph-left">
+									<h5>Monthly Budget</h5>
+									<span>This report is based on 100% of sessions.</span>
+								</div>
+								<div class="cph-right">
+									<ul class="top-header-btns">
+										<li><a class="switch-full" href="#" title="Expand Panel To Full Screen"    data-rel="tooltip"> <i class="icon dripicons-expand-2"></i></a></li>
+										<li><a class="collapse-panel" href="#" title="Collapse/Uncollapse Panel"   data-rel="tooltip" > <i class="icon dripicons-chevron-up"></i></a></li>
+										<li class="dropdown">
+											<a href="#" data-toggle="dropdown" title="Panel Options"    data-rel="tooltip"> <i class="icon dripicons-dots-3"></i></a>
+											<div class="dropdown-menu  dropdown-menu-right theme-media">
+												<div class="dropdown-menu-header"> <div class="dmh-inner"> <h4>Panel Options</h4> </div> </div>
+												<a class="dropdown-item cp" href="#" title=""> <span class="color-fill-icon" style="background-color:#fff;"></span> Header Background Color</a>
+												<a class="dropdown-item header-fontcolor" href="#" title=""> <span class="color-fill-icon"  style="background-color:#333" ></span> Header Font Color Dark/Light</a>
+											</div>
+										</li>
+										<li><a class="removeWidget" href="#" title="Remove Panel"    data-rel="tooltip"> <i class="icon dripicons-cross"></i> </a></li>
+									</ul>
+								</div>
+							</div><!-- Panel Header -->
+							<div class="console-panel-body no-padding">
+								<div class="filter-bar">
+									<div class="console-results mr-auto">
+										<div><label class="mg-b-0">Registered Users</label>  <h2>32,169</h2></div>
+										<div><label class="mg-b-0">Total Page Views</label>  <h2>603,120</h2></div>
+										<div><label class="mg-b-0">Bounce Rate</label>  <h2>25%</h2></div>
+									</div>
+									<ul class="nav nav-pills nav-pills-info justify-content-end">
+										<li class="nav-item"> <a class="nav-link"  data-toggle="pill" href="#pills-1">Week</a> </li>
+										<li class="nav-item"> <a class="nav-link" data-toggle="pill" href="#pills-2">Month</a> </li>
+										<li class="nav-item"> <a class="nav-link active show" data-toggle="pill" href="#pills-3">Year</a> </li>
+									</ul>
+								</div>
+								<div  class="chart-container">
+									<canvas id="barchart1" width="100" height="450"></canvas>
+								</div>
+							</div>
+						</div><!-- Console Panel -->
+					</div>
+
+					<div class="grid-stack-item" data-gs-x="6" data-gs-y="18" data-gs-width="6" data-gs-height="11"   data-gs-min-height="11"  data-gs-min-width="4">
+						<div class="console-panel grid-stack-item-content">
+							<div class="console-panel-header">
+								<div class="cph-left">
+									<h5>Support Tickets</h5>
+									<span>This report is based on 100% of sessions.</span>
+								</div>
+								<div class="cph-right">
+									<ul class="top-header-btns">
+										<li><a class="switch-full" href="#" title="Expand Panel To Full Screen"    data-rel="tooltip"> <i class="icon dripicons-expand-2"></i></a></li>
+										<li><a class="collapse-panel" href="#" title="Collapse/Uncollapse Panel"   data-rel="tooltip" > <i class="icon dripicons-chevron-up"></i></a></li>
+										<li class="dropdown">
+											<a href="#" data-toggle="dropdown" title="Panel Options"    data-rel="tooltip"> <i class="icon dripicons-dots-3"></i></a>
+											<div class="dropdown-menu  dropdown-menu-right theme-media">
+												<div class="dropdown-menu-header"> <div class="dmh-inner"> <h4>Panel Options</h4> </div> </div>
+												<a class="dropdown-item cp" href="#" title=""> <span class="color-fill-icon" style="background-color:#fff;"></span> Header Background Color</a>
+												<a class="dropdown-item header-fontcolor" href="#" title=""> <span class="color-fill-icon"  style="background-color:#333" ></span> Header Font Color Dark/Light</a>
+											</div>
+										</li>
+										<li><a class="removeWidget" href="#" title="Remove Panel"    data-rel="tooltip"> <i class="icon dripicons-cross"></i> </a></li>
+									</ul>
+								</div>
+							</div><!-- Panel Header -->
+							<div class="console-panel-body no-padding scrollbar">
+								<div class="theme-media style2">
+									<div class="media unread">
+										<img class="mr-3 circle-img" src="http://placehold.it/598x598/ff5c75/fff" alt=" ">
+										<div class="media-body">
+											<span>Mar 15 12:32pm</span><p>Congratulate <strong>Socrates Itumay</strong> for work anniversaries</p>
+											<div class="action-icons">
+												<a href="javascript:void(0)"><i class="icon dripicons-checkmark text-success"></i></a>
+												<a href="javascript:void(0)"><i class="icon dripicons-cross  text-danger"></i></a>
+												<a href="javascript:void(0)"><i class="icon dripicons-heart text-info"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="media unread">
+										<img class="mr-3 circle-img" src="http://placehold.it/598x598/ff5c75/fff" alt=" ">
+										<div class="media-body">
+											<span>Mar 15 12:32pm</span><p>Congratulate <strong>Socrates Itumay</strong> for work anniversaries</p>
+											<div class="action-icons">
+												<a href="javascript:void(0)"><i class="icon dripicons-checkmark text-success"></i></a>
+												<a href="javascript:void(0)"><i class="icon dripicons-cross  text-danger"></i></a>
+												<a href="javascript:void(0)"><i class="icon dripicons-heart text-info"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="media unread">
+										<img class="mr-3 circle-img" src="http://placehold.it/598x598/ff5c75/fff" alt=" ">
+										<div class="media-body">
+											<span>Mar 13 04:16am</span><p><strong>Joyce Chua</strong> just created a new blog post</p>
+											<div class="action-icons">
+												<a href="javascript:void(0)"><i class="icon dripicons-checkmark text-success"></i></a>
+												<a href="javascript:void(0)"><i class="icon dripicons-cross  text-danger"></i></a>
+												<a href="javascript:void(0)"><i class="icon dripicons-heart text-info"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="media">
+										<img class="mr-3 circle-img" src="http://placehold.it/598x598/ff5c75/fff" alt=" ">
+										<div class="media-body">
+											<span>Mar 13 02:56am</span><p><strong>Althea Cabardo</strong> just created a new blog post</p>
+											<div class="action-icons">
+												<a href="javascript:void(0)"><i class="icon dripicons-checkmark text-success"></i></a>
+												<a href="javascript:void(0)"><i class="icon dripicons-cross  text-danger"></i></a>
+												<a href="javascript:void(0)"><i class="icon dripicons-heart text-info"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="media">
+										<img class="mr-3 circle-img" src="http://placehold.it/598x598/ff5c75/fff" alt=" ">
+										<div class="media-body">
+											<span>Mar 12 10:40pm</span><p><strong>Adrian Monino</strong> added new comment on your photo</p>
+											<div class="action-icons">
+												<a href="javascript:void(0)"><i class="icon dripicons-checkmark text-success"></i></a>
+												<a href="javascript:void(0)"><i class="icon dripicons-cross  text-danger"></i></a>
+												<a href="javascript:void(0)"><i class="icon dripicons-heart text-info"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- Console Panel -->
+					</div>
+
+					<div class="grid-stack-item" data-gs-x="0" data-gs-y="29" data-gs-width="3" data-gs-height="17" data-gs-min-height="10"  data-gs-min-width="3">
+						<div class="console-panel grid-stack-item-content">
+							<div class="console-panel-header">
+								<div class="cph-left">
+									<h5>User Activity</h5>
+								</div>
+								<div class="cph-right">
+									<ul class="top-header-btns">
+										<li><a class="switch-full" href="#" title="Expand Panel To Full Screen"    data-rel="tooltip"> <i class="icon dripicons-expand-2"></i></a></li>
+										<li><a class="collapse-panel" href="#" title="Collapse/Uncollapse Panel"   data-rel="tooltip" > <i class="icon dripicons-chevron-up"></i></a></li>
+										<li class="dropdown">
+											<a href="#" data-toggle="dropdown" title="Panel Options"    data-rel="tooltip"> <i class="icon dripicons-dots-3"></i></a>
+											<div class="dropdown-menu  dropdown-menu-right theme-media">
+												<div class="dropdown-menu-header"> <div class="dmh-inner"> <h4>Panel Options</h4> </div> </div>
+												<a class="dropdown-item cp" href="#" title=""> <span class="color-fill-icon" style="background-color:#fff;"></span> Header Background Color</a>
+												<a class="dropdown-item header-fontcolor" href="#" title=""> <span class="color-fill-icon"  style="background-color:#333" ></span> Header Font Color Dark/Light</a>
+											</div>
+										</li>
+										<li><a class="removeWidget" href="#" title="Remove Panel"    data-rel="tooltip"> <i class="icon dripicons-cross"></i> </a></li>
+									</ul>
+								</div>
+							</div><!-- Panel Header -->
+							<div class="console-panel-body">
+								<div class="steamline m-t-40">
+									<div class="sl-item">
+										<div class="sl-left bg-primary"> <i class="icon dripicons-user"></i></div>
+										<div class="sl-right">
+											<div class="font-medium flex justify-content-between">Meeting today <span class="sl-date"> 03:25 PM</span></div>
+											<div class="desc">you can write anything </div>
+										</div>
+									</div>
+									<div class="sl-item">
+										<div class="sl-left bg-info "><i class="fa fa-image"></i></div>
+										<div class="sl-right">
+											<div class="font-medium flex justify-content-between">Send documents to Clark</div>
+											<div class="desc">Lorem Ipsum is simply </div>
+										</div>
+									</div>
+									<div class="sl-item">
+										<div class="sl-left"> <img class="img-circle" alt="user" src="http://placehold.it/598x598/ff5c75/fff"> </div>
+										<div class="sl-right">
+											<div class="font-medium flex justify-content-between">Go to the Doctor <span class="sl-date">11:52 AM</span></div>
+											<div class="desc">Contrary to popular belief</div>
+										</div>
+									</div>
+									<div class="sl-item">
+										<div class="sl-left"> <img class="img-circle" alt="user" src="http://placehold.it/598x598/ff5c75/fff"> </div>
+										<div class="sl-right">
+											<div  class="font-medium flex justify-content-between"><a href="javascript:void(0)">Bill Gates</a> <span class="sl-date">01:16 PM</span></div>
+											<div class="desc">Approve meeting with Bill</div>
+											<div class="btn-group btn-group-sm mt-3">
+												<a href="javascript:void(0)" class="btn btn-sm  btn-rounded btn-outline-success">Apporve</a> <a href="javascript:void(0)" class="btn btn-sm btn-rounded btn-outline-danger">Refuse</a> </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- Console Panel -->
+						</div>
+
+						<div class="grid-stack-item" data-gs-x="3" data-gs-y="29" data-gs-width="9" data-gs-height="17" data-gs-min-height="10"  data-gs-min-width="3">
+							<div class="console-panel grid-stack-item-content">
+								<div class="console-panel-header">
+									<div class="cph-left">
+										<h5>Browser Stats</h5>
+										<span>This report is based on 100% of sessions.</span>
+									</div>
+									<div class="cph-right">
+										<ul class="top-header-btns">
+											<li><a class="switch-full" href="#" title="Expand Panel To Full Screen"    data-rel="tooltip"> <i class="icon dripicons-expand-2"></i></a></li>
+											<li><a class="collapse-panel" href="#" title="Collapse/Uncollapse Panel"   data-rel="tooltip" > <i class="icon dripicons-chevron-up"></i></a></li>
+											<li class="dropdown">
+												<a href="#" data-toggle="dropdown" title="Panel Options"    data-rel="tooltip"> <i class="icon dripicons-dots-3"></i></a>
+												<div class="dropdown-menu  dropdown-menu-right theme-media">
+													<div class="dropdown-menu-header"> <div class="dmh-inner"> <h4>Panel Options</h4> </div> </div>
+													<a class="dropdown-item cp" href="#" title=""> <span class="color-fill-icon" style="background-color:#fff;"></span> Header Background Color</a>
+													<a class="dropdown-item header-fontcolor" href="#" title=""> <span class="color-fill-icon"  style="background-color:#333" ></span> Header Font Color Dark/Light</a>
+												</div>
+											</li>
+											<li><a class="removeWidget" href="#" title="Remove Panel"    data-rel="tooltip"> <i class="icon dripicons-cross"></i> </a></li>
+										</ul>
+									</div>
+								</div><!-- Panel Header -->
+								<div class="console-panel-body no-padding">
+
+									<table class="table table-striped console-table table-bordered table-hover mb-0">
+										<thead>
+											<tr>
+												<th>Invoice</th>
+												<th>User</th>
+												<th>Order date</th>
+												<th>Amount</th>
+												<th>Status</th>
+												<th class="text-center">Tracking Number</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><a href="javascript:void(0)" class="link"> Order #53431</a></td>
+												<td>Steve N. Horton</td>
+												<td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 22, 2014</span></td>
+												<td>$45.00</td>
+												<td><span class="badge badge-success badge-pill">sale</span> </td>
+												<td class="text-center">-</td>
+											</tr>
+											<tr>
+												<td><a href="javascript:void(0)" class="link"> Order #53432</a></td>
+												<td>Charles S Boyle</td>
+												<td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 24, 2014</span></td>
+												<td>$245.30</td>
+												<td> <span class="badge badge-warning badge-pill">Unpaid</span> </td>
+												<td class="text-center"><i class="fa fa-plane"></i> CGX0089734531</td>
+											</tr>
+											<tr>
+												<td><a href="javascript:void(0)" class="link"> Order #53433</a></td>
+												<td>Lucy Doe</td>
+												<td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 24, 2014</span></td>
+												<td>$38.00</td>
+												<td> <span class="badge badge-danger badge-pill">Refunded</span> </td>
+												<td class="text-center"><i class="fa fa-plane"></i> CGX0089934571</td>
+											</tr>
+											<tr>
+												<td><a href="javascript:void(0)" class="link"> Order #53434</a></td>
+												<td>Teresa L. Doe</td>
+												<td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 15, 2014</span></td>
+												<td>$77.99</td>
+												<td> <span class="badge badge-info badge-pill">Shipped</span> </td>
+												<td class="text-center"><i class="fa fa-plane"></i> CGX0089734574</td>
+											</tr>
+											<tr>
+												<td><a href="javascript:void(0)" class="link"> Order #53435</a></td>
+												<td>Teresa L. Doe</td>
+												<td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 12, 2014</span></td>
+												<td>$18.00</td>
+												<td> <span class="badge badge-success badge-pill">Delivered</span> </td>
+												<td class="text-center">-</td>
+											</tr>
+											<tr>
+												<td><a href="javascript:void(0)" class="link">Order #53437</a></td>
+												<td>Charles S Boyle</td>
+												<td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 17, 2014</span></td>
+												<td>$658.00</td>
+												<td> <span class="badge badge-danger badge-pill">Refunded</span> </td>
+												<td class="text-center">-</td>
+											</tr>
+											<tr>
+												<td><a href="javascript:void(0)" class="link">Order #536584</a></td>
+												<td>Scott S. Calabrese</td>
+												<td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 19, 2014</span></td>
+												<td>$45.58</td>
+												<td> <span class="badge badge-warning badge-pill">Unpaid</span> </td>
+												<td class="text-center">-</td>
+											</tr>
+											<tr>
+												<td><a href="javascript:void(0)" class="link"> Order #53433</a></td>
+												<td>Lucy Doe</td>
+												<td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 24, 2014</span></td>
+												<td>$38.00</td>
+												<td> <span class="badge badge-info badge-pill">Shipped</span> </td>
+												<td class="text-center"><i class="fa fa-plane"></i> CGX0089934571</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div><!-- Console Panel -->
+						</div>
+
+
+					</div>
+			</div><!-- Content Area -->
+
+			<aside class="more-opt-panel"></aside>
+		</div><!-- Theme Content -->
+
+	</div><!-- Theme Wrapper -->
+
+
+	<script src="js/jquerymain_jquerytouch_jquerycookies.js"></script>
+	<script src="js/plugins/loader/loadingoverlay.min.js"></script>
+	<script src="js/plugins/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!-- Bootstrap and Popper.js -->
+	<script src="js/bootstrap_popper.min.js"></script>
+
+
+
+	<!-- Grid Stack Start -->
+	<script>var _tooltip = jQuery.fn.tooltip;</script>
+	<script src="js/jquery_ui.min.js"></script>
+	<script>jQuery.fn.tooltip = _tooltip;</script>
+	<script src="js/grid_stack_pack.min.js"></script>
+
+
+	<script src="js/plugins/sparkline/jquery.sparkline.min.js"></script><!-- Sparkline -->
+	<script src="js/plugins/chartjs/Chart.bundle.min.js"></script><!-- Chart JS -->
+	<script src="js/plugins/colorpicker/bootstrap-colorpicker-plus.min.js"></script><!-- ColorPicker -->
+	<script src="js/plugins/jquery_confirm/jquery_confirm.js"></script><!-- Confirm -->
+	<script src="js/plugins/toaster/jquery.toaster.js"></script>
+	<script src="js/script.js"></script><!-- Common Scripts -->
+
+	<!-- Pagelevel Initializations Of Plugins -->
+	<script src="js/page-level/chartjs/linechart1.js"></script>
+	<script src="js/page-level/chartjs/donutchart1.js"></script>
+	<script src="js/page-level/chartjs/barchart1.js"></script>
+
+</body>
+</html>

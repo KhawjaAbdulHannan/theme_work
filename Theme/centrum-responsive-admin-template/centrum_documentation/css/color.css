@@ -1,0 +1,19 @@
+.features li span:hover,
+.file-detail strong,
+.toggle-item.activate h2.active,
+.content p span{
+	background-color:#1a666a;
+}
+
+.intro-text h1 strong,
+.title h2 strong,
+.features li span:before,
+.subtitle strong,
+.sidemenu ul li a:active,
+.sidemenu ul li a:focus{
+	color:#1a666a;
+}
+
+.content{
+	border-color:#1a666a;
+}
