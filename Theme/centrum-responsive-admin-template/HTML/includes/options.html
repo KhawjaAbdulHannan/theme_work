@@ -1,4 +1,4 @@
-<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+
 
 <div class="mytab theme1">
       <button class="arrow-button">></button>
@@ -75,53 +75,65 @@
                   </form>
             </div>
             <div class="tab-pane fade" id="tab2">
-                  <form >
-                        <div class="console-form-body">
-                              <div class="row">
-                                    <div class="col-lg-12 col-md-12">
-                                          <div class="form-group row align-items-center">
-                                                <label class="col-6 col-form-label">Select Style</label>
-                                                <div class="col-6 flex">
-                                                      <select id="sideheader_settings" class="select2 classic form-control">
-                                                            <option value="default">Default</option>
-                                                            <option value="top">Top</option>
-                                                            <option value="contained">Contained</option>
-                                                            <option value="narrow">Narrow</option>
-                                                      </select>
-                                                </div>
-                                          </div>
-                                    </div>
+                  <div class="theme-content">
+                  <div class="content-area">
+                        <div class="grid-stack gs-area">
+					<div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="2" data-gs-height="2" data-gs-min-height="2"  data-gs-min-width="2">
+						<div class="console-panel grid-stack-item-content">
+							<div class="console-panel-header">
+								<div class="cph-left">
+									<h5>Monthly Budget</h5>
+									<span>This report is based on 100% of sessions.</span>
+								</div>
+								<div class="cph-right">
+									<ul class="top-header-btns">
+										<li><a class="switch-full" href="#" title="Expand Panel To Full Screen"    data-rel="tooltip"> <i class="icon dripicons-expand-2"></i></a></li>
+										<li><a class="collapse-panel" href="#" title="Collapse/Uncollapse Panel"   data-rel="tooltip" > <i class="icon dripicons-chevron-up"></i></a></li>
+										<li class="dropdown">
+											<a href="#" data-toggle="dropdown" title="Panel Options"    data-rel="tooltip"> <i class="icon dripicons-dots-3"></i></a>
+											<div class="dropdown-menu  dropdown-menu-right theme-media">
+												<div class="dropdown-menu-header"> <div class="dmh-inner"> <h4>Panel Options</h4> </div> </div>
+												<a class="dropdown-item cp" href="#" title=""> <span class="color-fill-icon" style="background-color:#fff;"></span> Header Background Color</a>
+												<a class="dropdown-item header-fontcolor" href="#" title=""> <span class="color-fill-icon"  style="background-color:#333" ></span> Header Font Color Dark/Light</a>
+											</div>
+										</li>
+										<li><a class="removeWidget" href="#" title="Remove Panel"    data-rel="tooltip"> <i class="icon dripicons-cross"></i> </a></li>
+									</ul>
+								</div>
+							</div><!-- Panel Header -->
+							<div class="console-panel-body-noscroll no-padding">
+								<div class="d-flex console-filters-wrapper">
+									<a class="filter-open" href="#" title=""><i class="icon dripicons-toggles"></i></a>
+									<div class="console-filters">
+										<div class="console-filter-title align-items-center">
+											<h3>Console Filters</h3>
+											<a class="filter-close ml-auto" href="#" title=""><i class="icon dripicons-chevron-left"></i></a>
+										</div>
+										<div class="console-filter-content">
+											<div id="jstree"></div>
+										</div>
+										<div class="console-filters-bottom">
+											<button class="btn btn-sm btn-outline btn-primary float-right">Apply Filters</button>
+										</div>
+									</div>
 
-                                    <div class="col-lg-12 col-md-12" id="user-info">
-                                          <div class="form-group row align-items-center">
-                                                <label class="col-6 col-form-label">Show/Hide User Info</label>
-                                                <div class="col-6 flex">
-                                                      <span class="console-switch ml-auto">
-                                                            <label class="switch">
-                                                                  <input id="user_info_check" type="checkbox">
-                                                                  <span class="slider round"></span>
-                                                            </label>
-                                                      </span>
-                                                </div>
-                                          </div>
-                                    </div>
+									<div class="console-filter-content">
+										<div id="chartdiv" style="width:100%; height:100%"></div>
+									</div>
+								</div>
+							</div>
+						</div><!-- Console Panel -->
+					</div>
 
-                                    <div class="col-lg-12 col-md-12">
-                                          <div class="form-group">
-                                                <label>Sidemenu Background</label>
-                                                <div class="console-radiobuttons-list" id="sidemenu_bg">
-                                                      <label class="con-radio"> <input id="default_sidemenu" type="radio" checked="checked" name="sidemenu_bg"> Default <span class="radiomark"></span> </label>
-                                                      <label class="con-radio"> <input id="coloured_sidemenu" type="radio"  name="sidemenu_bg"> Coloured <span class="radiomark"></span> </label>
-                                                      <label class="con-radio"> <input id="gradient_sidemenu" type="radio"  name="sidemenu_bg"> Gradient <span class="radiomark"></span> </label>
-                                                      <label class="con-radio"> <input id="dark_sidemenu" type="radio" name="sidemenu_bg"> Dark<span class="radiomark"></span> </label>
-                                                      <label class="con-radio"> <input id="dark2_sidemenu" type="radio" name="sidemenu_bg"> Dark 2<span class="radiomark"></span> </label>
-                                                </div>
-                                          </div>
-                                    </div>
+                        
+                 
+			
+			
 
-                              </div>
-                        </div>
-                  </form>
+
+
+			</div>
             </div>
+      </div>
       </div>
 </div>

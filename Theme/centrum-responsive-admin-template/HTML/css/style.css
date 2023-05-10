@@ -912,7 +912,8 @@ aside.console-sidemenu.coloured .user *{ color: #FFF }
 .theme-content.narrow-menu .console-sidemenu.gradient ul.console-menu li,
 .theme-content.narrow-menu .console-sidemenu.coloured ul.console-menu li{ border-bottom-color: rgba(255,255,255,0.2)}
 /*=============== More Options Panel ===================*/
-aside.more-opt-panel {
+div.more-opt-panel {
+      background-color: white;
       margin-left: -500px;
       background: #fff;
       order: 3;
@@ -935,7 +936,7 @@ aside.more-opt-panel {
       -o-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
       transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
 }
-aside.more-opt-panel.active{ margin-left:0 }
+div.more-opt-panel.active{ margin-left:0 }
 /*=============== Content Area ===================*/
 .content-area {
       flex: auto;
@@ -2934,6 +2935,14 @@ img.alignright{
       background: #f1f1f1;
       padding: 10px 20px;
       border-color: #e8e8e8;
+}
+.row{
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      width: 100%;
 }
 .bd-example-row .row>.col, .bd-example-row .row>[class^=col-] {
       background: rgba(86,61,124,.15);

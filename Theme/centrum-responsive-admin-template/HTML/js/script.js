@@ -50,6 +50,7 @@ $(window).on("load", function(){
                   $(".arrow-button").css({
                         "left": "1%"
                    })
+                   $('#mainContent').removeClass("col-lg-9 col-md-9").addClass("col-lg-12 col-md-12");
             }
       });
       // ========== Sidemenu Functions Ends ============ //
@@ -71,12 +72,16 @@ $(window).on("load", function(){
              $(this).css({
                   "left": "25%"
              })
+             debugger;
+
+             $('#mainContent').removeClass("col-lg-12 col-md-12").addClass("col-lg-9 col-md-9");
             }
             else{
             $(this).html('>')
             $(this).css({
                   "left": "1%"
              })
+             $('#mainContent').removeClass("col-lg-9 col-md-9").addClass("col-lg-12 col-md-12");
             }
       });
       
@@ -89,7 +94,8 @@ $(window).on("load", function(){
             animate:true,
             width:12,
             verticalMargin: 20,
-            handle: '.console-panel-header, .console-no-header'
+            handle: '.console-panel-header, .console-no-header',
+            acceptWidgets: function(el) {return true } 
 
       };
       $('.grid-stack').gridstack(options)
@@ -121,6 +127,7 @@ $(window).on("load", function(){
 
       // ========== Panel Header Font Color ============ //
       $(".header-fontcolor").on("click",function(){
+            debugger
             $(this).parents('.console-panel-header').toggleClass('light');
             $(this).find('span').toggleClass('active');
             return false;
@@ -129,6 +136,7 @@ $(window).on("load", function(){
 
       // ========== Panel Switch Full Screen ============ //
       $("body").on("click",".switch-full", function(){
+            debugger
             let parent = $(this).parents('.console-panel');
             parent.toggleClass('fullscreen');
             parent.hasClass('fullscreen') ? $(this).find("i").attr('class','icon dripicons-contract-2') : $(this).find("i").attr('class','icon dripicons-expand-2');
@@ -139,6 +147,7 @@ $(window).on("load", function(){
 
       // ========== Collapse Panel ============ //
       $("body").on("click",".collapse-panel", function(){
+            debugger
             $(this).attr('class','expand-panel').find('i').attr('class','icon dripicons-chevron-down');
             let parent = $(this).parents('.grid-stack-item');
             let currentHeight = $(parent).attr('data-gs-height');
@@ -160,6 +169,7 @@ $(window).on("load", function(){
 
       // ========== Uncollapse Panel ============ //
       $("body").on("click",".expand-panel", function(){
+            debugger
             $(this).attr('class','collapse-panel').find('i').attr('class','icon dripicons-chevron-up');
             let parent = $(this).parents('.grid-stack-item');
             var grid = $('.grid-stack').data('gridstack');
@@ -276,6 +286,7 @@ $(window).on("load", function(){
       // ===== Enable / Disable Dragging Start =====//
       $(document).on("change", "#draggable_widgets", function(){
             var grid = $('.grid-stack').data('gridstack');
+            console.log(grid)
             if($(this).prop('checked') == true){
                   grid.movable('.grid-stack-item', true);
                   $.toaster({ message : 'Widgets are now draggable', title : 'Draggable Turned On', priority : 'info' });
