@@ -72,9 +72,23 @@ $(window).on("load", function(){
              $(this).css({
                   "left": "25%"
              })
-             debugger;
+            
 
              $('#mainContent').removeClass("col-lg-12 col-md-12").addClass("col-lg-9 col-md-9");
+
+             var options = {
+                  float: false,
+                  cellHeight: 10,
+                  animate:true,
+                  width:12,
+                  verticalMargin: 20,
+                  handle: '.console-panel-header, .console-no-header , grid-stack-item' , 
+                  acceptWidgets: function(el) {return true } 
+      
+            };
+            $('.grid-stack-options').gridstack(options)
+          
+      
             }
             else{
             $(this).html('>')
@@ -94,11 +108,14 @@ $(window).on("load", function(){
             animate:true,
             width:12,
             verticalMargin: 20,
-            handle: '.console-panel-header, .console-no-header',
+            handle: '.console-panel-header, .console-no-header , grid-stack-item',
             acceptWidgets: function(el) {return true } 
 
       };
       $('.grid-stack').gridstack(options)
+
+      var grid_main = $('.grid-stack')
+  
 
 
 
@@ -127,7 +144,7 @@ $(window).on("load", function(){
 
       // ========== Panel Header Font Color ============ //
       $(".header-fontcolor").on("click",function(){
-            debugger
+           
             $(this).parents('.console-panel-header').toggleClass('light');
             $(this).find('span').toggleClass('active');
             return false;
@@ -136,7 +153,7 @@ $(window).on("load", function(){
 
       // ========== Panel Switch Full Screen ============ //
       $("body").on("click",".switch-full", function(){
-            debugger
+          
             let parent = $(this).parents('.console-panel');
             parent.toggleClass('fullscreen');
             parent.hasClass('fullscreen') ? $(this).find("i").attr('class','icon dripicons-contract-2') : $(this).find("i").attr('class','icon dripicons-expand-2');
@@ -147,7 +164,7 @@ $(window).on("load", function(){
 
       // ========== Collapse Panel ============ //
       $("body").on("click",".collapse-panel", function(){
-            debugger
+            
             $(this).attr('class','expand-panel').find('i').attr('class','icon dripicons-chevron-down');
             let parent = $(this).parents('.grid-stack-item');
             let currentHeight = $(parent).attr('data-gs-height');
@@ -166,13 +183,56 @@ $(window).on("load", function(){
             parent.find('.console-footer').slideUp();
             return false;
       });
+      $("body").on("click",".collapse-panel", function(){
+            
+            $(this).attr('class','expand-panel').find('i').attr('class','icon dripicons-chevron-down');
+            let parent = $(this).parents('.grid-stack-item');
+            let currentHeight = $(parent).attr('data-gs-height');
+            parent.attr('data-heighthistory',currentHeight);
+
+            let minHeight = $(parent).attr('data-gs-min-height');
+            if(parent.attr('data-gs-min-height')){
+                  parent.attr('data-minheighthistory',minHeight);
+            }
+
+            var grid = $('.grid-stack-options').data('gridstack');
+            grid.minHeight(parent , '', 3);
+            grid.resize(parent , '', 3);
+            grid.resizable(parent,false);
+            parent.find('.console-panel-body').slideUp();
+            parent.find('.console-footer').slideUp();
+            return false;
+      });
 
       // ========== Uncollapse Panel ============ //
       $("body").on("click",".expand-panel", function(){
-            debugger
+           
             $(this).attr('class','collapse-panel').find('i').attr('class','icon dripicons-chevron-up');
             let parent = $(this).parents('.grid-stack-item');
             var grid = $('.grid-stack').data('gridstack');
+            if (parent.attr('data-heighthistory')){
+                  let heightHistory = parseInt(parent.attr('data-heighthistory'));
+                  grid.resize(parent , '', heightHistory);
+            }else{
+                  grid.resize(parent , '', 20);
+            }
+
+            if(parent.attr('data-minheighthistory')){
+                  let minHeight = parseInt(parent.attr('data-minheighthistory'));
+                  grid.minHeight(parent, minHeight)
+            }
+
+            grid.resizable(parent,true);
+            parent.find('.console-panel-body').slideDown();
+            parent.find('.console-footer').slideDown();
+            return false;
+      });
+
+      $("body").on("click",".expand-panel", function(){
+           
+            $(this).attr('class','collapse-panel').find('i').attr('class','icon dripicons-chevron-up');
+            let parent = $(this).parents('.grid-stack-item');
+            var grid = $('.grid-stack-options').data('gridstack');
             if (parent.attr('data-heighthistory')){
                   let heightHistory = parseInt(parent.attr('data-heighthistory'));
                   grid.resize(parent , '', heightHistory);
@@ -207,6 +267,33 @@ $(window).on("load", function(){
                               keys: ['enter', 'shift'],
                               action: function(){
                                     var grid = $('.grid-stack').data('gridstack');
+                                    $(_this).parents('.console-panel').slideUp("complete", (function(){
+                                          grid.removeWidget(parent, true)
+                                    }));
+                                    $.alert('Widget Removed!');
+                              }
+                        },
+                        cancel: function () {
+                        }
+                  }
+            });
+            return false;
+      });
+
+      $("body").on("click",".removeWidget", function(){
+            let _this = this;
+            let parent = $(this).parents('.grid-stack-item');
+            $.confirm({
+                  theme: 'bootstrap',
+                  title: 'Are You Sure?',
+                  content: 'You will not be able to see this panel back on this page.',
+                  buttons: {
+                        confirm:{
+                              text: 'Confirm',
+                              btnClass: 'btn-blue',
+                              keys: ['enter', 'shift'],
+                              action: function(){
+                                    var grid = $('.grid-stack-options').data('gridstack');
                                     $(_this).parents('.console-panel').slideUp("complete", (function(){
                                           grid.removeWidget(parent, true)
                                     }));
@@ -286,7 +373,19 @@ $(window).on("load", function(){
       // ===== Enable / Disable Dragging Start =====//
       $(document).on("change", "#draggable_widgets", function(){
             var grid = $('.grid-stack').data('gridstack');
-            console.log(grid)
+           
+            if($(this).prop('checked') == true){
+                  grid.movable('.grid-stack-item', true);
+                  $.toaster({ message : 'Widgets are now draggable', title : 'Draggable Turned On', priority : 'info' });
+            }
+            else{
+                  grid.movable('.grid-stack-item', false);
+                  $.toaster({ message : 'Widgets are now not draggable', title : 'Draggable Turned Off', priority : 'warning' });
+            }
+      });
+      $(document).on("change", "#draggable_widgets", function(){
+            var grid = $('.grid-stack-options').data('gridstack');
+          
             if($(this).prop('checked') == true){
                   grid.movable('.grid-stack-item', true);
                   $.toaster({ message : 'Widgets are now draggable', title : 'Draggable Turned On', priority : 'info' });
@@ -301,6 +400,17 @@ $(window).on("load", function(){
       // ===== Enable / Disable Resizing Start =====//
       $(document).on("change", "#resizable_widget", function(){
             var grid = $('.grid-stack').data('gridstack');
+            if($(this).prop('checked') == true){
+                  grid.resizable('.grid-stack-item', true);
+                  $.toaster({ message : 'Widgets are now resizable', title : 'Resizable Turned On', priority : 'info' });
+            }
+            else{
+                  grid.resizable('.grid-stack-item', false);
+                  $.toaster({ message : 'Widgets are now not resizable', title : 'Resizable Turned Off', priority : 'warning' });
+            }
+      });
+      $(document).on("change", "#resizable_widget", function(){
+            var grid = $('.grid-stack-options').data('gridstack');
             if($(this).prop('checked') == true){
                   grid.resizable('.grid-stack-item', true);
                   $.toaster({ message : 'Widgets are now resizable', title : 'Resizable Turned On', priority : 'info' });

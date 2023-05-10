@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Centrum - Bootstrap4 Responsive Admin Dashboard Template </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/grid_stack.min.css" />
+	<link rel="stylesheet" href="js/plugins/jquery_confirm/jquery_confirm.css">
+	<link rel="stylesheet" href="js/plugins/colorpicker/bootstrap-colorpicker-plus.min.css">
+	<link rel="stylesheet" href="js/plugins/scrollbar/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="js/plugins/datepicker/datepicker.css">
+
+
+
+	<link rel="stylesheet" type="text/css" href="css/dripicon.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+</head>
+<body class="theme-body">
+	<div class="theme-wrapper">
+		<header></header><!-- Header -->
+
+		<div class="theme-content">
+			<aside class="console-sidemenu active" id="sidemenu"></aside><!-- Console Sidemenu -->
+
+			<div class="content-area">
+				<div id="toparea" class="style2"></div>
+
+				<div class="grid-stack gs-area">
+					<div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="6" data-gs-height="20"  data-gs-min-height="7"  data-gs-min-width="3">
+						<form class="console-panel grid-stack-item-content">
+							<div class="console-panel-header">
+								<div class="cph-left">
+									<h5>Simple Form</h5>
+									<span>Based on 100% of sessions.</span>
+								</div>
+								<div class="cph-right">
+									<ul class="top-header-btns">
+										<li><a class="collapse-panel" href="#" title="Collapse/Uncollapse Panel"   data-rel="tooltip" > <i class="icon dripicons-chevron-up"></i></a></li>
+										<li class="dropdown">
+											<a href="#" data-toggle="dropdown" title="Panel Options"    data-rel="tooltip"> <i class="icon dripicons-dots-3"></i></a>
+											<div class="dropdown-menu  dropdown-menu-right theme-media">
+												<div class="dropdown-menu-header"> <div class="dmh-inner"> <h4>Panel Options</h4> </div> </div>
+												<a class="dropdown-item cp" href="#" title=""> <span class="color-fill-icon" style="background-color:#fff;"></span> Header Background Color</a>
+												<a class="dropdown-item header-fontcolor" href="#" title=""> <span class="color-fill-icon"  style="background-color:#333" ></span> Header Font Color Dark/Light</a>
+											</div>
+										</li>
+										<li><a class="removeWidget" href="#" title="Remove Panel"    data-rel="tooltip"> <i class="icon dripicons-cross"></i> </a></li>
+									</ul>
+								</div>
+							</div><!-- Panel Header -->
+							<div class="console-panel-body pl-0 pr-0">
+										<div class="console-form-body">
+											<div class="row">
+												<div class="col-lg-6 col-md-12">
+													<div class="form-group">
+														<label>Enter Name</label>
+														<input type="text" class="form-control"  placeholder="Enter Name">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-12">
+													<div class="form-group">
+														<label>Enter Email</label>
+														<input type="email" class="form-control"  placeholder="Enter email">
+														<span class="form-text text-muted">We'll never share your email with anyone else.</span>
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-12">
+													<div class="form-group">
+														<label>Enter Password</label>
+														<input type="password" class="form-control"  placeholder="Enter Password">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-12">
+													<div class="form-group">
+														<label>Confirm Password</label>
+														<input type="password" class="form-control"  placeholder="Enter Password">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-12">
+													<div class="form-group form-group-marginless">
+														<label>Left Addon</label>
+														<div class="input-group">
+															<div class="input-group-prepend"><span class="input-group-text">@</span></div>
+															<input type="text" class="form-control" placeholder="Email">
+														</div>
+														<span class="form-text text-muted">Some help content goes here</span>
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-12">
+													<div class="form-group form-group-marginless">
+														<label>Right Addon</label>
+														<div class="input-group">
+															<input type="text" class="form-control" placeholder="Username" >
+															<div class="input-group-append"><span class="input-group-text" id="basic-addon44">@example.com</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="con-separator con-separator--border-dashed con-separator--space-md"></div>
+											<div class="row">
+												<div class="col-lg-6 col-md-12">
+													<div class="form-group ">
+														<label>Joint Addons</label>
+														<div class="input-group">
+															<div class="input-group-prepend">
+																<span class="input-group-text">$</span>
+																<span class="input-group-text">0.00</span>
+															</div>
+															<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-12">
+													<div class="form-group ">
+														<label>Left &amp; Right Addons</label>
+														<div class="input-group">
+															<div class="input-group-prepend"><span class="input-group-text" id="basic-addon4">#</span></div>
+															<input type="text" class="form-control" placeholder="Units" >
+															<div class="input-group-append"><span class="input-group-text" id="basic-addon5">px</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+								</div>
+
+								<div class="console-footer">
+									<button class="btn btn-sm btn-info">Submit</button>
+									<button class="btn btn-sm btn-secondary">Cancel</button>
+								</div>
+						</form><!-- Console Panel -->
+					</div>
+
+					<div class="grid-stack-item" data-gs-x="6" data-gs-y="0" data-gs-width="6" data-gs-height="20"  data-gs-min-height="7"  data-gs-min-width="3">
+						<form class="console-panel grid-stack-item-content">
+							<div class="console-panel-header">
+								<div class="cph-left">
+									<h5>Input Group Sizing</h5>
+									<span>Based on 100% of sessions.</span>
+								</div>
+								<div class="cph-right">
+									<ul class="top-header-btns">
+										<li><a class="collapse-panel" href="#" title="Collapse/Uncollapse Panel"   data-rel="tooltip" > <i class="icon dripicons-chevron-up"></i></a></li>
+										<li class="dropdown">
+											<a href="#" data-toggle="dropdown" title="Panel Options"    data-rel="tooltip"> <i class="icon dripicons-dots-3"></i></a>
+											<div class="dropdown-menu  dropdown-menu-right theme-media">
+												<div class="dropdown-menu-header"> <div class="dmh-inner"> <h4>Panel Options</h4> </div> </div>
+												<a class="dropdown-item cp" href="#" title=""> <span class="color-fill-icon" style="background-color:#fff;"></span> Header Background Color</a>
+												<a class="dropdown-item header-fontcolor" href="#" title=""> <span class="color-fill-icon"  style="background-color:#333" ></span> Header Font Color Dark/Light</a>
+											</div>
+										</li>
+										<li><a class="removeWidget" href="#" title="Remove Panel"    data-rel="tooltip"> <i class="icon dripicons-cross"></i> </a></li>
+									</ul>
+								</div>
+							</div><!-- Panel Header -->
+							<div class="console-panel-body pl-0 pr-0">
+								<div class="console-form-body">
+									<div class="row">
+										<div class="col-lg-12 col-md-12">
+											<div class="form-group ">
+												<label>Large Input Group</label>
+												<div class="input-group input-group-lg">
+													<div class="input-group-prepend"><span class="input-group-text" id="basic-addon3"><i class="fa fa-exclamation-triangle"></i></span></div>
+													<input type="text" class="form-control" placeholder="Large size" >
+												</div>
+												<span class="form-text text-muted">Some help content goes here</span>
+											</div>
+										</div>
+										<div class="col-lg-12 col-md-12">
+											<div class="form-group ">
+												<label>Large Input Group</label>
+												<div class="input-group input-group-lg">
+													<div class="input-group-prepend">
+														<span class="input-group-text"><i class="fa fa-undo"></i></span>
+														<span class="input-group-text">0.00</span>
+													</div>
+													<input type="text" class="form-control" aria-label="Large size">
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-12 col-md-12">
+											<div class="form-group ">
+												<label>Small Input Group</label>
+												<div class="input-group input-group-sm">
+													<input type="text" class="form-control" placeholder="Small size" >
+													<div class="input-group-append"><span class="input-group-text" id="basic-addon22"><i class="fa fa-user"></i></span></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-12 col-md-12">
+											<div class="form-group  input-group-sm">
+												<label>Small Input Group</label>
+												<div class="input-group input-group-sm">
+													<div class="input-group-prepend"><span class="input-group-text" id="basic-addon33"><i class="fa fa-paper-plane" aria-hidden="true"></i></span></div>
+													<input type="text" class="form-control" placeholder="Small size" >
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="console-footer">
+								<button class="btn btn-sm btn-info">Submit</button>
+								<button class="btn btn-sm btn-secondary">Cancel</button>
+							</div>
+						</form><!-- Console Panel -->
+					</div>
+
+					<div class="grid-stack-item" data-gs-x="0" data-gs-y="20" data-gs-width="6" data-gs-height="20"  data-gs-min-height="7"  data-gs-min-width="3">
+						<form class="console-panel grid-stack-item-content">
+							<div class="console-panel-header">
+								<div class="cph-left">
+									<h5>Input With Dropdowns</h5>
+									<span>Based on 100% of sessions.</span>
+								</div>
+								<div class="cph-right">
+									<ul class="top-header-btns">
+										<li><a class="collapse-panel" href="#" title="Collapse/Uncollapse Panel"   data-rel="tooltip" > <i class="icon dripicons-chevron-up"></i></a></li>
+										<li class="dropdown">
+											<a href="#" data-toggle="dropdown" title="Panel Options"    data-rel="tooltip"> <i class="icon dripicons-dots-3"></i></a>
+											<div class="dropdown-menu  dropdown-menu-right theme-media">
+												<div class="dropdown-menu-header"> <div class="dmh-inner"> <h4>Panel Options</h4> </div> </div>
+												<a class="dropdown-item cp" href="#" title=""> <span class="color-fill-icon" style="background-color:#fff;"></span> Header Background Color</a>
+												<a class="dropdown-item header-fontcolor" href="#" title=""> <span class="color-fill-icon"  style="background-color:#333" ></span> Header Font Color Dark/Light</a>
+											</div>
+										</li>
+										<li><a class="removeWidget" href="#" title="Remove Panel"    data-rel="tooltip"> <i class="icon dripicons-cross"></i> </a></li>
+									</ul>
+								</div>
+							</div><!-- Panel Header -->
+							<div class="console-panel-body pl-0 pr-0">
+								<div class="console-form-body ">
+									<div class="row">
+										<div class="col-lg-12 col-md-12">
+											<div class="form-group ">
+												<label>Left Button Dropdown</label>
+												<div class="input-group">
+													<div class="input-group-prepend dropdown">
+														<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															Action
+														</button>
+														<div class="dropdown-menu" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
+															<a class="dropdown-item" href="#">Action</a>
+															<a class="dropdown-item" href="#">Another action</a>
+															<a class="dropdown-item" href="#">Something else here</a>
+															<div role="separator" class="dropdown-divider"></div>
+															<a class="dropdown-item" href="#">Separated link</a>
+														</div>
+													</div>
+													<input type="text" class="form-control" aria-label="Text input with dropdown button">
+												</div>
+												<span class="form-text text-muted">Some help content goes here</span>
+											</div>
+										</div>
+										<div class="col-lg-12 col-md-12">
+											<div class="form-group ">
+												<label>Right Button Dropdown</label>
+												<div class="input-group">
+													<input type="text" class="form-control" aria-label="Text input with dropdown button">
+													<div class="input-group-append dropdown">
+														<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+															Action
+														</button>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a class="dropdown-item" href="#">Action</a>
+															<a class="dropdown-item" href="#">Another action</a>
+															<a class="dropdown-item" href="#">Something else here</a>
+															<div role="separator" class="dropdown-divider"></div>
+															<a class="dropdown-item" href="#">Separated link</a>
+														</div>
+													</div>
+												</div>
+												<span class="form-text text-muted">Some help content goes here</span>
+											</div>
+										</div>
+										<div class="col-lg-12 col-md-12">
+											<div class="form-group ">
+												<label>Left &amp; Right Button Dropdown</label>
+												<div class="input-group">
+													<div class="input-group-prepend dropdown">
+														<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															Action
+														</button>
+														<div class="dropdown-menu" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
+															<a class="dropdown-item" href="#">Action</a>
+															<a class="dropdown-item" href="#">Another action</a>
+															<a class="dropdown-item" href="#">Something else here</a>
+															<div role="separator" class="dropdown-divider"></div>
+															<a class="dropdown-item" href="#">Separated link</a>
+														</div>
+													</div>
+													<input type="text" class="form-control" aria-label="Text input with dropdown button">
+													<div class="input-group-append dropdown">
+														<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															Action
+														</button>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a class="dropdown-item" href="#">Action</a>
+															<a class="dropdown-item" href="#">Another action</a>
+															<a class="dropdown-item" href="#">Something else here</a>
+															<div role="separator" class="dropdown-divider"></div>
+															<a class="dropdown-item" href="#">Separated link</a>
+														</div>
+													</div>
+												</div>
+												<span class="form-text text-muted">Some help content goes here</span>
+											</div>
+
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="console-footer">
+								<button class="btn btn-sm btn-info">Submit</button>
+								<button class="btn btn-sm btn-secondary">Cancel</button>
+							</div>
+						</form><!-- Console Panel -->
+					</div>
+
+
+					<div class="grid-stack-item" data-gs-x="6" data-gs-y="20" data-gs-width="6" data-gs-height="25"  data-gs-min-height="7"  data-gs-min-width="3">
+						<form class="console-panel grid-stack-item-content">
+							<div class="console-panel-header">
+								<div class="cph-left">
+									<h5>Checkboxes and Radio addons</h5>
+									<span>Based on 100% of sessions.</span>
+								</div>
+								<div class="cph-right">
+									<ul class="top-header-btns">
+										<li><a class="collapse-panel" href="#" title="Collapse/Uncollapse Panel"   data-rel="tooltip" > <i class="icon dripicons-chevron-up"></i></a></li>
+										<li class="dropdown">
+											<a href="#" data-toggle="dropdown" title="Panel Options"    data-rel="tooltip"> <i class="icon dripicons-dots-3"></i></a>
+											<div class="dropdown-menu  dropdown-menu-right theme-media">
+												<div class="dropdown-menu-header"> <div class="dmh-inner"> <h4>Panel Options</h4> </div> </div>
+												<a class="dropdown-item cp" href="#" title=""> <span class="color-fill-icon" style="background-color:#fff;"></span> Header Background Color</a>
+												<a class="dropdown-item header-fontcolor" href="#" title=""> <span class="color-fill-icon"  style="background-color:#333" ></span> Header Font Color Dark/Light</a>
+											</div>
+										</li>
+										<li><a class="removeWidget" href="#" title="Remove Panel"    data-rel="tooltip"> <i class="icon dripicons-cross"></i> </a></li>
+									</ul>
+								</div>
+							</div><!-- Panel Header -->
+							<div class="console-panel-body pl-0 pr-0">
+									<div class="console-form-body ">
+										<div class="row">
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group">
+													<label>Left Checkbox Addon</label>
+													<div class="input-group">
+														<div class="input-group-prepend">
+															<span class="input-group-text">
+																<label class="con-check">
+																	<input type="checkbox" checked="checked">
+																	<span class="checkmark"></span>
+																</label>
+															</span>
+															<span class="input-group-text">$</span>
+														</div>
+														<input type="text" class="form-control" aria-label="Text input with checkbox">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group ">
+													<label>Right Checkbox Addon</label>
+													<div class="input-group">
+														<div class="input-group-prepend">
+															<span class="input-group-text">$</span>
+														</div>
+														<input type="text" class="form-control" aria-label="Text input with checkbox">
+														<div class="input-group-append">
+															<span class="input-group-text">
+																<label class="con-check">
+																	<input type="checkbox">
+																	<span class="checkmark"></span>
+																</label>
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group ">
+													<label>Right &amp; Left Checkbox Addon</label>
+													<div class="input-group">
+														<div class="input-group-prepend">
+															<span class="input-group-text">
+																<label class="con-check">
+																	<input type="checkbox">
+																	<span class="checkmark"></span>
+																</label>
+															</span>
+														</div>
+														<input type="text" class="form-control" aria-label="Text input with checkbox">
+														<div class="input-group-append">
+															<span class="input-group-text">
+																<label class="con-check">
+																	<input type="checkbox" >
+																	<span class="checkmark"></span>
+																</label>
+															</span>
+														</div>
+													</div>
+												</div>
+
+
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group ">
+													<label>Left Radio Addon</label>
+													<div class="input-group">
+														<div class="input-group-prepend">
+															<span class="input-group-text">
+																<label class="con-radio">
+																	<input type="radio">
+																	<span class="radiomark"></span>
+																</label>
+															</span>
+															<span class="input-group-text">$</span>
+														</div>
+														<input type="text" class="form-control" aria-label="Text input with radio">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group ">
+													<label>Right Radio Addon</label>
+													<div class="input-group">
+														<div class="input-group-prepend">
+															<span class="input-group-text">$</span>
+														</div>
+														<input type="text" class="form-control" aria-label="Text input with radio">
+														<div class="input-group-append">
+															<span class="input-group-text">
+																<label class="con-radio">
+																	<input type="radio">
+																	<span class="radiomark"></span>
+																</label>
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group ">
+													<label>Right &amp; Left Radio Addon</label>
+													<div class="input-group">
+														<div class="input-group-prepend">
+															<span class="input-group-text">
+																<label class="con-radio">
+																	<input type="radio">
+																	<span class="radiomark"></span>
+																</label>
+															</span>
+														</div>
+														<input type="text" class="form-control" aria-label="Text input with radio">
+														<div class="input-group-append">
+															<span class="input-group-text">
+																<label class="con-radio">
+																	<input type="radio">
+																	<span class="radiomark"></span>
+																</label>
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+							</div>
+
+							<div class="console-footer">
+								<button class="btn btn-sm btn-info">Submit</button>
+								<button class="btn btn-sm btn-secondary">Cancel</button>
+							</div>
+						</form><!-- Console Panel -->
+					</div>
+
+					<form class="grid-stack-item" data-gs-x="0" data-gs-y="40" data-gs-width="6" data-gs-height="25"  data-gs-min-height="7"  data-gs-min-width="3">
+						<div class="console-panel grid-stack-item-content">
+							<div class="console-panel-header">
+								<div class="cph-left">
+									<h5>Checkboxes & Radios</h5>
+									<span>Based on 100% of sessions.</span>
+								</div>
+								<div class="cph-right">
+									<ul class="top-header-btns">
+										<li><a class="collapse-panel" href="#" title="Collapse/Uncollapse Panel"   data-rel="tooltip" > <i class="icon dripicons-chevron-up"></i></a></li>
+										<li class="dropdown">
+											<a href="#" data-toggle="dropdown" title="Panel Options"    data-rel="tooltip"> <i class="icon dripicons-dots-3"></i></a>
+											<div class="dropdown-menu  dropdown-menu-right theme-media">
+												<div class="dropdown-menu-header"> <div class="dmh-inner"> <h4>Panel Options</h4> </div> </div>
+												<a class="dropdown-item cp" href="#" title=""> <span class="color-fill-icon" style="background-color:#fff;"></span> Header Background Color</a>
+												<a class="dropdown-item header-fontcolor" href="#" title=""> <span class="color-fill-icon"  style="background-color:#333" ></span> Header Font Color Dark/Light</a>
+											</div>
+										</li>
+										<li><a class="removeWidget" href="#" title="Remove Panel"    data-rel="tooltip"> <i class="icon dripicons-cross"></i> </a></li>
+									</ul>
+								</div>
+							</div><!-- Panel Header -->
+							<div class="console-panel-body pl-0 pr-0">
+									<div class="console-form-body ">
+										<div class="row">
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group">
+													<label>Default Checkboxes</label>
+													<div class="console-checkbox-list">
+														<label class="con-check">
+															<input type="checkbox"> Default
+															<span class="checkmark"></span>
+														</label>
+														<label class="con-check">
+															<input type="checkbox" disabled=""> Disabled
+															<span class="checkmark"></span>
+														</label>
+														<label class="con-check">
+															<input type="checkbox" checked="checked"> Checked
+															<span class="checkmark"></span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="con-separator con-separator--border-dashed con-separator--space-md"></div>
+
+										<div class="row">
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group">
+													<label>Inline Checkboxes</label>
+													<div class="console-checkbox-inline">
+														<label class="con-check">
+															<input type="checkbox">  Option 1
+															<span class="checkmark"></span>
+														</label>
+														<label class="con-check">
+															<input type="checkbox"> Option 2
+															<span class="checkmark"></span>
+														</label>
+														<label class="con-check">
+															<input type="checkbox"> Option 3
+															<span class="checkmark"></span>
+														</label>
+													</div>
+													<span class="form-text text-muted">Some help text goes here</span>
+												</div>
+											</div>
+										</div>
+
+										<div class="con-separator con-separator--border-dashed con-separator--space-md"></div>
+
+										<div class="row">
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group">
+													<label>Default Radio Buttons</label>
+													<div class="console-radiobuttons-list">
+														<label class="con-radio">
+															<input type="radio" name="radioexample1"> Default
+															<span class="radiomark"></span>
+														</label>
+														<label class="con-radio">
+															<input type="radio" disabled=""  name="radioexample1"> Disabled
+															<span class="radiomark"></span>
+														</label>
+														<label class="con-radio">
+															<input type="radio" checked="checked"  name="radioexample1"> Checked
+															<span class="radiomark"></span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="con-separator con-separator--border-dashed con-separator--space-md"></div>
+
+										<div class="row">
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group">
+													<label>Inline Radio Buttons</label>
+													<div class="console-radiobuttons-inline">
+														<label class="con-radio">
+															<input type="radio" name="radioexample">  Option 1
+															<span class="radiomark"></span>
+														</label>
+														<label class="con-radio">
+															<input type="radio" name="radioexample">  Option 2
+															<span class="radiomark"></span>
+														</label>
+														<label class="con-radio">
+															<input type="radio" name="radioexample">  Option 3
+															<span class="radiomark"></span>
+														</label>
+													</div>
+													<span class="form-text text-muted">Some help text goes here</span>
+												</div>
+											</div>
+										</div>
+
+									</div>
+							</div>
+
+							<div class="console-footer">
+								<button class="btn btn-sm btn-info">Submit</button>
+								<button class="btn btn-sm btn-secondary">Cancel</button>
+							</div>
+						</div><!-- Console Panel -->
+					</form>
+
+					<div class="grid-stack-item" data-gs-x="6" data-gs-y="45" data-gs-width="6" data-gs-height="25"  data-gs-min-height="7"  data-gs-min-width="3">
+						<form class="console-panel grid-stack-item-content">
+							<div class="console-panel-header">
+								<div class="cph-left">
+									<h5>Inline Labels</h5>
+									<span>Based on 100% of sessions.</span>
+								</div>
+								<div class="cph-right">
+									<ul class="top-header-btns">
+										<li><a class="collapse-panel" href="#" title="Collapse/Uncollapse Panel"   data-rel="tooltip" > <i class="icon dripicons-chevron-up"></i></a></li>
+										<li class="dropdown">
+											<a href="#" data-toggle="dropdown" title="Panel Options"    data-rel="tooltip"> <i class="icon dripicons-dots-3"></i></a>
+											<div class="dropdown-menu  dropdown-menu-right theme-media">
+												<div class="dropdown-menu-header"> <div class="dmh-inner"> <h4>Panel Options</h4> </div> </div>
+												<a class="dropdown-item cp" href="#" title=""> <span class="color-fill-icon" style="background-color:#fff;"></span> Header Background Color</a>
+												<a class="dropdown-item header-fontcolor" href="#" title=""> <span class="color-fill-icon"  style="background-color:#333" ></span> Header Font Color Dark/Light</a>
+											</div>
+										</li>
+										<li><a class="removeWidget" href="#" title="Remove Panel"    data-rel="tooltip"> <i class="icon dripicons-cross"></i> </a></li>
+									</ul>
+								</div>
+							</div><!-- Panel Header -->
+							<div class="console-panel-body pl-0 pr-0">
+									<div class="console-form-body ">
+										<div class="row">
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Name</label>
+													<div class="col-10">
+														<input type="text" class="form-control"  placeholder="Enter Name">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Email</label>
+													<div class="col-10">
+														<input type="email" class="form-control"  placeholder="Enter email">
+														<span class="form-text text-muted">We'll never share your email with anyone else.</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Password</label>
+													<div class="col-10">
+														<input type="password" class="form-control"  placeholder="Enter Password">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Confirm</label>
+													<div class="col-10">
+														<input type="password" class="form-control"  placeholder="Enter Password">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Left Addon</label>
+													<div class="col-10">
+														<div class="input-group">
+															<div class="input-group-prepend"><span class="input-group-text">@</span></div>
+															<input type="text" class="form-control" placeholder="Email" >
+														</div>
+														<span class="form-text text-muted">Some help content goes here</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Right Addon</label>
+													<div class="col-10">
+														<div class="input-group">
+															<input type="text" class="form-control" placeholder="Username" >
+															<div class="input-group-append"><span class="input-group-text" id="basic-addon2">@example.com</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="con-separator con-separator--border-dashed con-separator--space-md"></div>
+
+										<div class="row">
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row align-items-start">
+													<label class="col-2 col-form-label">Checkboxes</label>
+													<div class="col-10">
+														<div class="console-checkbox-inline">
+															<label class="con-check">
+																<input type="checkbox"> Default
+																<span class="checkmark"></span>
+															</label>
+															<label class="con-check">
+																<input type="checkbox" disabled=""> Disabled
+																<span class="checkmark"></span>
+															</label>
+															<label class="con-check">
+																<input type="checkbox" checked="checked"> Checked
+																<span class="checkmark"></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+							<div class="console-footer">
+								<button class="btn btn-sm btn-info">Submit</button>
+								<button class="btn btn-sm btn-secondary">Cancel</button>
+							</div>
+						</form><!-- Console Panel -->
+					</div>
+
+					<div class="grid-stack-item" data-gs-x="0" data-gs-y="80" data-gs-width="6" data-gs-height="33"  data-gs-min-height="7"  data-gs-min-width="3">
+						<form class="console-panel grid-stack-item-content">
+							<div class="console-panel-header">
+								<div class="cph-left">
+									<h5>Textual HTML5 Inputs</h5>
+									<span>Based on 100% of sessions.</span>
+								</div>
+								<div class="cph-right">
+									<ul class="top-header-btns">
+										<li><a class="collapse-panel" href="#" title="Collapse/Uncollapse Panel"   data-rel="tooltip" > <i class="icon dripicons-chevron-up"></i></a></li>
+										<li class="dropdown">
+											<a href="#" data-toggle="dropdown" title="Panel Options"    data-rel="tooltip"> <i class="icon dripicons-dots-3"></i></a>
+											<div class="dropdown-menu  dropdown-menu-right theme-media">
+												<div class="dropdown-menu-header"> <div class="dmh-inner"> <h4>Panel Options</h4> </div> </div>
+												<a class="dropdown-item cp" href="#" title=""> <span class="color-fill-icon" style="background-color:#fff;"></span> Header Background Color</a>
+												<a class="dropdown-item header-fontcolor" href="#" title=""> <span class="color-fill-icon"  style="background-color:#333" ></span> Header Font Color Dark/Light</a>
+											</div>
+										</li>
+										<li><a class="removeWidget" href="#" title="Remove Panel"    data-rel="tooltip"> <i class="icon dripicons-cross"></i> </a></li>
+									</ul>
+								</div>
+							</div><!-- Panel Header -->
+							<div class="console-panel-body pl-0 pr-0">
+									<div class="console-form-body ">
+										<div class="row">
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Text</label>
+													<div class="col-10">
+														<input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Search</label>
+													<div class="col-10">
+														<input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Email</label>
+													<div class="col-10">
+														<input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">URL</label>
+													<div class="col-10">
+														<input class="form-control" type="url" value="https://getbootstrap.com" id="example-url-input">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Telephone</label>
+													<div class="col-10">
+														<input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Password</label>
+													<div class="col-10">
+														<input class="form-control" type="password" value="hunter2" id="example-password-input">
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Number</label>
+													<div class="col-10">
+														<input class="form-control" type="number" value="42" id="example-number-input">
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Date and time</label>
+													<div class="col-10">
+														<input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Date</label>
+													<div class="col-10">
+														<input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Month</label>
+													<div class="col-10">
+														<input class="form-control" type="month" value="2011-08" id="example-month-input">
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Week</label>
+													<div class="col-10">
+														<input class="form-control" type="week" value="2011-W33" id="example-week-input">
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Time</label>
+													<div class="col-10">
+														<input class="form-control" type="time" value="13:45:00" id="example-time-input">
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Color</label>
+													<div class="col-10">
+														<input class="form-control" type="color" value="#563d7c" id="example-color-input">
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group row">
+													<label class="col-2 col-form-label">Range</label>
+													<div class="col-10">
+														<input class="form-control" type="range">
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+							</div>
+							<div class="console-footer">
+								<button class="btn btn-sm btn-info">Submit</button>
+								<button class="btn btn-sm btn-secondary">Cancel</button>
+							</div>
+						</form><!-- Console Panel -->
+					</div>
+
+					<div class="grid-stack-item" data-gs-x="6" data-gs-y="85" data-gs-width="6" data-gs-height="25"  data-gs-min-height="7"  data-gs-min-width="3">
+						<form class="console-panel grid-stack-item-content">
+							<div class="console-panel-header">
+								<div class="cph-left">
+									<h5>Input States</h5>
+									<span>Based on 100% of sessions.</span>
+								</div>
+								<div class="cph-right">
+									<ul class="top-header-btns">
+										<li><a class="collapse-panel" href="#" title="Collapse/Uncollapse Panel"   data-rel="tooltip" > <i class="icon dripicons-chevron-up"></i></a></li>
+										<li class="dropdown">
+											<a href="#" data-toggle="dropdown" title="Panel Options"    data-rel="tooltip"> <i class="icon dripicons-dots-3"></i></a>
+											<div class="dropdown-menu  dropdown-menu-right theme-media">
+												<div class="dropdown-menu-header"> <div class="dmh-inner"> <h4>Panel Options</h4> </div> </div>
+												<a class="dropdown-item cp" href="#" title=""> <span class="color-fill-icon" style="background-color:#fff;"></span> Header Background Color</a>
+												<a class="dropdown-item header-fontcolor" href="#" title=""> <span class="color-fill-icon"  style="background-color:#333" ></span> Header Font Color Dark/Light</a>
+											</div>
+										</li>
+										<li><a class="removeWidget" href="#" title="Remove Panel"    data-rel="tooltip"> <i class="icon dripicons-cross"></i> </a></li>
+									</ul>
+								</div>
+							</div><!-- Panel Header -->
+							<div class="console-panel-body pl-0 pr-0">
+									<div class="console-form-body ">
+										<div class="row">
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group">
+													<label>Disabled Input</label>
+													<input type="email" class="form-control" disabled="disabled" placeholder="Disabled input">
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group">
+													<label>Disabled select</label>
+													<select class="form-control" disabled="disabled">
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+														<option>5</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group">
+													<label>Disabled textarea</label>
+													<textarea class="form-control" disabled="disabled" rows="3"></textarea>
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group">
+													<label>Readonly Input</label>
+													<input type="email" class="form-control" readonly="" placeholder="Readonly input">
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group">
+													<label>Readonly textarea</label>
+													<textarea class="form-control" readonly="" rows="3"></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+
+							<div class="console-footer">
+								<button class="btn btn-sm btn-info">Submit</button>
+								<button class="btn btn-sm btn-secondary">Cancel</button>
+							</div>
+						</form><!-- Console Panel -->
+					</div>
+				</div>
+			</div><!-- Content Area -->
+
+			<aside class="more-opt-panel">
+
+			</aside>
+		</div><!-- Theme Content -->
+
+	</div><!-- Theme Wrapper -->
+
+
+	<script src="js/jquerymain_jquerytouch_jquerycookies.js"></script>
+	<script src="js/plugins/loader/loadingoverlay.min.js"></script>
+
+
+	<script src="js/plugins/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<!-- Bootstrap and Popper.js -->
+	<script src="js/bootstrap_popper.min.js"></script>
+
+
+
+	<!-- Grid Stack Start -->
+	<script>var _tooltip = jQuery.fn.tooltip;</script>
+	<script src="js/jquery_ui.min.js"></script>
+	<script>jQuery.fn.tooltip = _tooltip;</script>
+	<script src="js/grid_stack_pack.min.js"></script>
+
+	<script src="js/plugins/colorpicker/bootstrap-colorpicker-plus.min.js"></script><!-- ColorPicker -->
+	<script src="js/plugins/jquery_confirm/jquery_confirm.js"></script><!-- Confirm -->
+	<script src="js/plugins/toaster/jquery.toaster.js"></script>
+
+
+
+	<script src="js/script.js"></script><!-- Common Scripts -->
+
+
+	<!-- Pagelevel Initializations Of Plugins -->
+
+
+</body>
+</html>

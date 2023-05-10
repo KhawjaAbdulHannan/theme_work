@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Centrum - Bootstrap4 Responsive Admin Dashboard Template </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/grid_stack.min.css" />
+	<link rel="stylesheet" href="js/plugins/jquery_confirm/jquery_confirm.css">
+	<link rel="stylesheet" href="js/plugins/colorpicker/bootstrap-colorpicker-plus.min.css">
+	<link rel="stylesheet" href="js/plugins/scrollbar/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="js/plugins/datepicker/datepicker.css">
+
+
+	<link rel="stylesheet" type="text/css" href="css/dripicon.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+</head>
+<body class="theme-body">
+	<div class="theme-wrapper">
+		<header></header><!-- Header -->
+
+		<div class="theme-content">
+			<aside class="console-sidemenu active" id="sidemenu"></aside><!-- Console Sidemenu -->
+
+			<div class="content-area">
+				<div id="toparea" class="style2"></div>
+
+				<div class="grid-stack gs-area">
+					<div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="3" data-gs-height="7"  data-gs-min-height="7"  data-gs-min-width="3">
+						<div class="console-panel grid-stack-item-content console-no-header">
+							<div class="console-panel-body-noscroll align-center">
+								<div class="console-stats">
+									<h5>TOTAL INCOME</h5>
+									<span class="sparklines" data-sparkType="bar" data-sparkBarColor="#6794dc" data-sparkBarWidth="5"  data-sparkHeight="40"> 5,8,9,3,6,8,9,3,1,6,8,9,5,6 </span>
+									<div class="stats-num">13,956 </div>
+									<i>18.2% higher vs previous month</i>
+								</div>
+							</div>
+						</div><!-- Console Panel -->
+					</div>
+
+
+					<div class="grid-stack-item" data-gs-x="3" data-gs-y="0" data-gs-width="3" data-gs-height="7"   data-gs-min-height="7"  data-gs-min-width="2">
+						<div class="console-panel grid-stack-item-content  console-no-header">
+							<div class="console-panel-body-noscroll">
+								<div class="console-stats">
+									<h5>WEEKLY STATUS</h5>
+									<div class="stats-num">13,956 </div>
+									<i>18.2% higher vs previous month</i>
+								</div>
+								<div  class="cover-bottom">
+									<canvas id="linechart1" width="100" height="100"></canvas>
+								</div>
+							</div>
+						</div><!-- Console Panel -->
+					</div>
+
+
+					<div class="grid-stack-item" data-gs-x="6" data-gs-y="0" data-gs-width="3" data-gs-height="5"  data-gs-min-height="5"  data-gs-min-width="3">
+						<div class="console-panel grid-stack-item-content console-no-header">
+							<div class="console-panel-body-noscroll align-center">
+								<div class="info-box">
+									<span class="bg-primary"><i class="icon dripicons-vibrate"></i></span>
+									<div class="info-box-detail">
+										<div class="info-text"> <h4>Complaints Resolved</h4> <i class="text-primary">864</i> </div>
+										<div class="progress"> <div class="progress-bar bg-primary" style="width:25%"></div> </div>
+									</div>
+								</div>
+							</div>
+						</div><!-- Console Panel -->
+					</div>
+
+
+					<div class="grid-stack-item" data-gs-x="9" data-gs-y="0"  data-gs-width="3" data-gs-height="8"  data-gs-min-height="5"  data-gs-min-width="3" data-gs-no-resize='true'>
+						<div class="console-panel grid-stack-item-content">
+							<div class="console-panel-body-noscroll no-padding">
+								<div class="card mrr-card" style="height:100%;">
+									<div class="card-body mb-3">
+										<span class="d-flex align-items-center"><i class="fab fa-bitcoin text-success mr-1"></i>Bitcoin</span>
+									</div>
+									<div class="card-body">
+										<h3 class="m-0">$80</h3>
+										<span>Goal: $75</span>
+									</div>
+									<div id="average-chart11" class="position-absolute bottom-chart" style="height:100%;width:100%;bottom:0"></div>
+								</div>
+
+							</div>
+						</div><!-- Console Panel -->
+					</div>
+
+
+
+					<div class="grid-stack-item" data-gs-x="0" data-gs-y="7" data-gs-width="4" data-gs-height="7"  data-gs-min-height="6"  data-gs-min-width="3">
+						<div class="console-panel grid-stack-item-content console-no-header">
+							<div class="console-panel-body">
+								<div class="expansion-label">
+									<span>This Month</span>
+									<span>Previous Month</span>
+								</div>
+								<label class="label txt-info">Expansions</label>
+								<p>Customers who have upgraded the level of your products or service.</p>
+								<div class="expansion-value">
+									<strong>$1,500</strong>
+									<strong>$1,120</strong>
+								</div>
+								<div class="progress my-2" style="height: 4px;">
+									<div class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="grid-stack-item" data-gs-x="4" data-gs-y="7" data-gs-width="4" data-gs-height="5"  data-gs-min-height="5"  data-gs-min-width="3" data-gs-no-resize='true'>
+						<div class="console-panel grid-stack-item-content console-no-header">
+							<div class="console-panel-body-noscroll no-padding">
+								<div class="status_box">
+									<div class="status_box_left">
+										<span class="badge bg-primary text-white">Todays Income</span>
+										<h3 class="mt-1">145</h3>
+										<p class="mb-0"><span class="text-success"><i class="fa fa-arrow-up"></i> 1,352</span> Total users world wide</p>
+									</div>
+									<div class="status_box_right">
+										<span><i class="fas fa-inbox"></i></span>
+										<svg viewBox="0 0 230 147" style="opacity: 0.4;" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="230px" height="147px"  enable-background="new 0 0 230 147" xml:space="preserve">  <image id="image0" width="230" height="147" x="0" y="0" xlink:href="data:image/png;base64,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" /></svg>
+									</div>
+								</div>
+							</div>
+						</div><!-- Console Panel -->
+					</div>
+
+
+	            </div>
+			</div><!-- Content Area -->
+
+				<aside class="more-opt-panel">
+
+				</aside>
+			</div><!-- Theme Content -->
+
+		</div><!-- Theme Wrapper -->
+
+
+		<script src="js/jquerymain_jquerytouch_jquerycookies.js"></script>
+		<script src="js/plugins/loader/loadingoverlay.min.js"></script>
+
+	    
+		<script src="js/plugins/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+		<!-- Bootstrap and Popper.js -->
+		<script src="js/bootstrap_popper.min.js"></script>
+		
+		
+
+		<!-- Grid Stack Start -->
+		<script>var _tooltip = jQuery.fn.tooltip;</script>
+		<script src="js/jquery_ui.min.js"></script>
+		<script>jQuery.fn.tooltip = _tooltip;</script>
+		<script src="js/grid_stack_pack.min.js"></script>
+
+		<script src="js/plugins/colorpicker/bootstrap-colorpicker-plus.min.js"></script><!-- ColorPicker -->
+		<script src="js/plugins/jquery_confirm/jquery_confirm.js"></script><!-- Confirm -->
+		<script src="js/plugins/toaster/jquery.toaster.js"></script>
+
+		<script src="js/plugins/sparkline/jquery.sparkline.min.js"></script><!-- Sparkline -->
+		<script src="js/plugins/chartjs/Chart.bundle.min.js"></script><!-- Chart JS -->
+		<!-- AM Charts Start -->
+		<script src="https://www.amcharts.com/lib/4/core.js"></script>
+		<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+		<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+		<!-- AM Charts End -->
+
+
+		<script src="js/script.js"></script><!-- Common Scripts -->
+
+		<!-- Pagelevel Initializations Of Plugins -->
+		<script src="js/page-level/chartjs/linechart1.js"></script>
+		<script src="js/page-level/amcharts/areachart1.js"></script>
+
+	</body>
+	</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Centrum - Bootstrap4 Responsive Admin Dashboard Template </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/grid_stack.min.css" />
+	<link rel="stylesheet" href="js/plugins/jquery_confirm/jquery_confirm.css">
+	<link rel="stylesheet" href="js/plugins/colorpicker/bootstrap-colorpicker-plus.min.css">
+	<link rel="stylesheet" href="js/plugins/scrollbar/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="js/plugins/datepicker/datepicker.css">
+
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.css" rel="stylesheet"><!-- Summer Note -->
+
+
+	<link rel="stylesheet" type="text/css" href="css/dripicon.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+</head>
+<body class="theme-body">
+	<div class="theme-wrapper">
+		<header></header><!-- Header -->
+
+		<div class="theme-content">
+			<aside class="console-sidemenu active" id="sidemenu"></aside><!-- Console Sidemenu -->
+
+			<div class="content-area">
+				<div id="toparea" class="style2"></div>
+
+				<div class="grid-stack gs-area">
+					<div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="12" data-gs-height="32"  data-gs-min-height="7"  data-gs-min-width="3">
+						<div class="console-panel grid-stack-item-content">
+							<div class="console-panel-header">
+								<div class="cph-left">
+									<h5>Inbox</h5>
+									<span>Based on 100% of sessions.</span>
+								</div>
+								<div class="cph-right">
+									<ul class="top-header-btns">
+										<li><a class="collapse-panel" href="#" title="Collapse/Uncollapse Panel"   data-rel="tooltip" > <i class="icon dripicons-chevron-up"></i></a></li>
+										<li class="dropdown">
+											<a href="#" data-toggle="dropdown" title="Panel Options"    data-rel="tooltip"> <i class="icon dripicons-dots-3"></i></a>
+											<div class="dropdown-menu  dropdown-menu-right theme-media">
+												<div class="dropdown-menu-header"> <div class="dmh-inner"> <h4>Panel Options</h4> </div> </div>
+												<a class="dropdown-item cp" href="#" title=""> <span class="color-fill-icon" style="background-color:#fff;"></span> Header Background Color</a>
+												<a class="dropdown-item header-fontcolor" href="#" title=""> <span class="color-fill-icon"  style="background-color:#333" ></span> Header Font Color Dark/Light</a>
+											</div>
+										</li>
+										<li><a class="removeWidget" href="#" title="Remove Panel"    data-rel="tooltip"> <i class="icon dripicons-cross"></i> </a></li>
+									</ul>
+								</div>
+							</div><!-- Panel Header -->
+							<div class="console-panel-body no-padding">
+								<div class="mail-system">
+									<div class="mail-sidebar">
+										<div class="my-profile-widget">
+											<div class="profile-widget-head">
+												<h3>James Baker</h3>
+												<i>Creative Designer</i>
+												<span><img src="http://placehold.it/120x120/ff5c75/fff" alt=""></span>
+											</div>
+											<h4>@james_baker</h4>
+											<div class="button-set">
+												<a href="#" data-rel="tooltip"  title="Facebook"><i class="fab fa-facebook"></i></a>
+												<a href="#" data-rel="tooltip"  title="Google"><i class="fab fa-google"></i></a>
+												<a href="#" data-rel="tooltip"  title="Twitter"><i class="fab fa-twitter"></i></a>
+											</div>
+										</div>
+										<a data-title="Compose" class="btn btn-accent get_pn" href="compose.html" title="">Compose New</a>
+										<ul class="mail-nav">
+											<li class="active"><a data-title="Inbox" class="get_pn" href="email.html" title=""><i class="fa fa-inbox"></i> Inbox <span>2</span></a></li>
+											<li><a data-title="Starred" class="get_pn" href="email.html" title=""><i class="far fa-star"></i> Starred</a></li>
+											<li><a data-title="Sent Items" class="get_pn" href="email.html" title=""><i class="far fa-check-circle"></i> Sent Items</a></li>
+											<li><a data-title="Spam" class="get_pn" href="email.html" title=""><i class="fa fa-exclamation"></i> Spam  <span>2</span></a></li>
+											<li><a data-title="Trash" class="get_pn" href="email.html" title=""><i class="far fa-trash-alt"></i> Trash</a></li>
+										</ul>
+
+										<div class="labels">
+											<h5>Labels</h5>
+											<span><a class="bg-primary" href="#" title=""></a>Clients</span>
+											<span><a class="bg-secondary" href="#" title=""></a>Social</span>
+											<span><a class="bg-success" href="#" title=""></a>Works</span>
+											<span><a class="bg-danger" href="#" title=""></a>Family</span>
+											<span><a class="bg-warning" href="#" title=""></a>Friends</span>
+										</div>
+									</div><!-- Mail Sidebar -->
+
+									<div class="mail-content">
+										<div class="mail-options">
+											<div class="select-all"> <input type="checkbox" id="all"> <label for="all">Select All</label> </div>
+											<div class="btn-group">
+												<a class="btn btn-sm btn-primary" href="#" data-rel="tooltip"  title="Archive"><i class="fa fa-archive"></i></a>
+												<a class="btn btn-sm btn-primary" href="#" data-rel="tooltip"  title="Reply"><i class="fa fa-reply"></i></a>
+												<a class="btn btn-sm btn-primary" href="#" data-rel="tooltip"  title="Spam"><i class="fa fa-exclamation-circle"></i></a>
+												<a class="btn btn-sm btn-primary" href="#" data-rel="tooltip"  title="Favorite"><i class="fa fa-star"></i></a>
+												<a class="btn btn-sm btn-primary" href="#" data-rel="tooltip"  title="Delete"><i class="fa fa-trash-alt"></i></a>
+											</div>
+
+											<div class="mail-pagination">
+												<span>1 - 20 of 276</span>
+												<ul>
+													<li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+													<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+												</ul>
+											</div>
+										</div><!-- Mail Options -->
+
+										<div class="table-container scrollbar">
+											<table class="table table-striped console-table">
+												<tbody>
+													<tr class="tablerow">
+														<td class="mail-select">
+															<input id="checkbox1" type="checkbox">
+															<i class="fa fa-star text-primary"></i>
+															<i class="fa fa-circle text-success"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Google Inc</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a>
+														</td>
+														<td style="width: 20px;"> <i class="fa fa-paperclip"></i> </td>
+														<td class="text-right"> 07:23 AM </td>
+													</tr>
+													<tr class="tablerow stripped">
+														<td class="mail-select">
+															<input id="checkbox2" type="checkbox">
+															<i class="fa fa-star text-muted"></i>
+															<i class="fa fa-circle text-danger"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Elon Musk</a> </td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn"> Because I am filling the grid with images of different sizes, is there any way t</a> </td>
+														<td style="width: 20px;"></td>
+														<td class="text-right"> 05:56 PM </td>
+													</tr>
+													<tr class="tablerow">
+														<td class="mail-select">
+															<input id="checkbox3" type="checkbox">
+															<i class="fa fa-star text-primary"></i>
+															<i class="fa fa-circle text-primary"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Christine Lagarde</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn"> I completely forgot about that.. Noob question, thank you I appreciate the response, very neat.</a>
+														</td>
+														<td style="width: 20px;"></td>
+														<td class="text-right"> 09:16 PM </td>
+													</tr>
+													<tr class="tablerow stripped">
+														<td class="mail-select">
+															<input id="checkbox4" type="checkbox">
+															<i class="fa fa-star text-muted"></i>
+															<i class="fa fa-circle text-secondary"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Ginni Rometty</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. </a>
+														</td>
+														<td style="width: 20px;"> <i class="fa fa-paperclip"></i> </td>
+														<td class="text-right"> 02:39 AM </td>
+													</tr>
+													<tr class="tablerow">
+														<td class="mail-select">
+															<input id="checkbox5" type="checkbox">
+															<i class="fa fa-star text-primary"></i>
+															<i class="fa fa-circle text-success"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Google Inc</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a>
+														</td>
+														<td style="width: 20px;"> <i class="fa fa-paperclip"></i> </td>
+														<td class="text-right"> 07:23 AM </td>
+													</tr>
+													<tr class="tablerow stripped">
+														<td class="mail-select">
+															<input id="checkbox6" type="checkbox">
+															<i class="fa fa-star text-muted"></i>
+															<i class="fa fa-circle text-danger"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Elon Musk</a> </td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn"> Because I am filling the grid with images of different sizes, is there any way t</a> </td>
+														<td style="width: 20px;"></td>
+														<td class="text-right"> 05:56 PM </td>
+													</tr>
+													<tr class="tablerow">
+														<td class="mail-select">
+															<input id="checkbox7" type="checkbox">
+															<i class="fa fa-star text-primary"></i>
+															<i class="fa fa-circle text-primary"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Christine Lagarde</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn"> I completely forgot about that.. Noob question, thank you I appreciate the response, very neat.</a>
+														</td>
+														<td style="width: 20px;"></td>
+														<td class="text-right"> 09:16 PM </td>
+													</tr>
+													<tr class="tablerow stripped">
+														<td class="mail-select">
+															<input id="checkbox8" type="checkbox">
+															<i class="fa fa-star text-muted"></i>
+															<i class="fa fa-circle text-secondary"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Ginni Rometty</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. </a>
+														</td>
+														<td style="width: 20px;"> <i class="fa fa-paperclip"></i> </td>
+														<td class="text-right"> 02:39 AM </td>
+													</tr>
+													<tr class="tablerow">
+														<td class="mail-select">
+															<input id="checkbox9" type="checkbox">
+															<i class="fa fa-star text-primary"></i>
+															<i class="fa fa-circle text-success"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Google Inc</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a>
+														</td>
+														<td style="width: 20px;"> <i class="fa fa-paperclip"></i> </td>
+														<td class="text-right"> 07:23 AM </td>
+													</tr>
+													<tr class="tablerow stripped">
+														<td class="mail-select">
+															<input id="checkbox0" type="checkbox">
+															<i class="fa fa-star text-muted"></i>
+															<i class="fa fa-circle text-danger"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Elon Musk</a> </td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn"> Because I am filling the grid with images of different sizes, is there any way t</a> </td>
+														<td style="width: 20px;"></td>
+														<td class="text-right"> 05:56 PM </td>
+													</tr>
+													<tr class="tablerow">
+														<td class="mail-select">
+															<input id="checkbox11" type="checkbox">
+															<i class="fa fa-star text-primary"></i>
+															<i class="fa fa-circle text-primary"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Christine Lagarde</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn"> I completely forgot about that.. Noob question, thank you I appreciate the response, very neat.</a>
+														</td>
+														<td style="width: 20px;"></td>
+														<td class="text-right"> 09:16 PM </td>
+													</tr>
+													<tr class="tablerow stripped">
+														<td class="mail-select">
+															<input id="checkbox12" type="checkbox">
+															<i class="fa fa-star text-muted"></i>
+															<i class="fa fa-circle text-secondary"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Ginni Rometty</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. </a>
+														</td>
+														<td style="width: 20px;"> <i class="fa fa-paperclip"></i> </td>
+														<td class="text-right"> 02:39 AM </td>
+													</tr>
+													<tr class="tablerow">
+														<td class="mail-select">
+															<input id="checkbox13" type="checkbox">
+															<i class="fa fa-star text-primary"></i>
+															<i class="fa fa-circle text-success"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Google Inc</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a>
+														</td>
+														<td style="width: 20px;"> <i class="fa fa-paperclip"></i> </td>
+														<td class="text-right"> 07:23 AM </td>
+													</tr>
+													<tr class="tablerow stripped">
+														<td class="mail-select">
+															<input id="checkbox14" type="checkbox">
+															<i class="fa fa-star text-muted"></i>
+															<i class="fa fa-circle text-danger"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Elon Musk</a> </td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn"> Because I am filling the grid with images of different sizes, is there any way t</a> </td>
+														<td style="width: 20px;"></td>
+														<td class="text-right"> 05:56 PM </td>
+													</tr>
+													<tr class="tablerow">
+														<td class="mail-select">
+															<input id="checkbox15" type="checkbox">
+															<i class="fa fa-star text-primary"></i>
+															<i class="fa fa-circle text-primary"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Christine Lagarde</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn"> I completely forgot about that.. Noob question, thank you I appreciate the response, very neat.</a>
+														</td>
+														<td style="width: 20px;"></td>
+														<td class="text-right"> 09:16 PM </td>
+													</tr>
+													<tr class="tablerow stripped">
+														<td class="mail-select">
+															<input id="checkbox16" type="checkbox">
+															<i class="fa fa-star text-muted"></i>
+															<i class="fa fa-circle text-secondary"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Ginni Rometty</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. </a>
+														</td>
+														<td style="width: 20px;"> <i class="fa fa-paperclip"></i> </td>
+														<td class="text-right"> 02:39 AM </td>
+													</tr>
+													<tr class="tablerow">
+														<td class="mail-select">
+															<input id="checkbox17" type="checkbox">
+															<i class="fa fa-star text-primary"></i>
+															<i class="fa fa-circle text-success"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Google Inc</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a>
+														</td>
+														<td style="width: 20px;"> <i class="fa fa-paperclip"></i> </td>
+														<td class="text-right"> 07:23 AM </td>
+													</tr>
+													<tr class="tablerow stripped">
+														<td class="mail-select">
+															<input id="checkbox18" type="checkbox">
+															<i class="fa fa-star text-muted"></i>
+															<i class="fa fa-circle text-danger"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Elon Musk</a> </td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn"> Because I am filling the grid with images of different sizes, is there any way t</a> </td>
+														<td style="width: 20px;"></td>
+														<td class="text-right"> 05:56 PM </td>
+													</tr>
+													<tr class="tablerow">
+														<td class="mail-select">
+															<input id="checkbox19" type="checkbox">
+															<i class="fa fa-star text-primary"></i>
+															<i class="fa fa-circle text-primary"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Christine Lagarde</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn"> I completely forgot about that.. Noob question, thank you I appreciate the response, very neat.</a>
+														</td>
+														<td style="width: 20px;"></td>
+														<td class="text-right"> 09:16 PM </td>
+													</tr>
+													<tr class="tablerow stripped">
+														<td class="mail-select">
+															<input id="checkbox20" type="checkbox">
+															<i class="fa fa-star text-muted"></i>
+															<i class="fa fa-circle text-secondary"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Ginni Rometty</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. </a>
+														</td>
+														<td style="width: 20px;"> <i class="fa fa-paperclip"></i> </td>
+														<td class="text-right"> 02:39 AM </td>
+													</tr>
+													<tr class="tablerow">
+														<td class="mail-select">
+															<input id="checkbox21" type="checkbox">
+															<i class="fa fa-star text-primary"></i>
+															<i class="fa fa-circle text-success"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Google Inc</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a>
+														</td>
+														<td style="width: 20px;"> <i class="fa fa-paperclip"></i> </td>
+														<td class="text-right"> 07:23 AM </td>
+													</tr>
+													<tr class="tablerow stripped">
+														<td class="mail-select">
+															<input id="checkbox22" type="checkbox">
+															<i class="fa fa-star text-muted"></i>
+															<i class="fa fa-circle text-danger"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Elon Musk</a> </td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn"> Because I am filling the grid with images of different sizes, is there any way t</a> </td>
+														<td style="width: 20px;"></td>
+														<td class="text-right"> 05:56 PM </td>
+													</tr>
+													<tr class="tablerow">
+														<td class="mail-select">
+															<input id="checkbox23" type="checkbox">
+															<i class="fa fa-star text-primary"></i>
+															<i class="fa fa-circle text-primary"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Christine Lagarde</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn"> I completely forgot about that.. Noob question, thank you I appreciate the response, very neat.</a>
+														</td>
+														<td style="width: 20px;"></td>
+														<td class="text-right"> 09:16 PM </td>
+													</tr>
+													<tr class="tablerow stripped">
+														<td class="mail-select">
+															<input id="checkbox24" type="checkbox">
+															<i class="fa fa-star text-muted"></i>
+															<i class="fa fa-circle text-secondary"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Ginni Rometty</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. </a>
+														</td>
+														<td style="width: 20px;"> <i class="fa fa-paperclip"></i> </td>
+														<td class="text-right"> 02:39 AM </td>
+													</tr>
+													<tr class="tablerow">
+														<td class="mail-select">
+															<input id="checkbox25" type="checkbox">
+															<i class="fa fa-star text-primary"></i>
+															<i class="fa fa-circle text-success"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Google Inc</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a>
+														</td>
+														<td style="width: 20px;"> <i class="fa fa-paperclip"></i> </td>
+														<td class="text-right"> 07:23 AM </td>
+													</tr>
+													<tr class="tablerow stripped">
+														<td class="mail-select">
+															<input id="checkbox26" type="checkbox">
+															<i class="fa fa-star text-muted"></i>
+															<i class="fa fa-circle text-danger"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Elon Musk</a> </td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn"> Because I am filling the grid with images of different sizes, is there any way t</a> </td>
+														<td style="width: 20px;"></td>
+														<td class="text-right"> 05:56 PM </td>
+													</tr>
+													<tr class="tablerow">
+														<td class="mail-select">
+															<input id="checkbox27" type="checkbox">
+															<i class="fa fa-star text-primary"></i>
+															<i class="fa fa-circle text-primary"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Christine Lagarde</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn"> I completely forgot about that.. Noob question, thank you I appreciate the response, very neat.</a>
+														</td>
+														<td style="width: 20px;"></td>
+														<td class="text-right"> 09:16 PM </td>
+													</tr>
+													<tr class="tablerow stripped">
+														<td class="mail-select">
+															<input id="checkbox28" type="checkbox">
+															<i class="fa fa-star text-muted"></i>
+															<i class="fa fa-circle text-secondary"></i>
+														</td>
+														<td> <a data-title="Mail Open" href="mail-open.html" class="email-name get_pn">Ginni Rometty</a> </td>
+														<td>
+															<a data-title="Mail Open" href="mail-open.html" class="email-msg get_pn">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. </a>
+														</td>
+														<td style="width: 20px;"> <i class="fa fa-paperclip"></i> </td>
+														<td class="text-right"> 02:39 AM </td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- Console Panel -->
+					</div>
+
+	            </div>
+			</div><!-- Content Area -->
+
+				<aside class="more-opt-panel">
+
+				</aside>
+			</div><!-- Theme Content -->
+
+		</div><!-- Theme Wrapper -->
+
+
+		<script src="js/jquerymain_jquerytouch_jquerycookies.js"></script>
+		<script src="js/plugins/loader/loadingoverlay.min.js"></script>
+
+	    
+		<script src="js/plugins/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+		<!-- Bootstrap and Popper.js -->
+		<script src="js/bootstrap_popper.min.js"></script>
+		
+		
+
+		<!-- Grid Stack Start -->
+		<script>var _tooltip = jQuery.fn.tooltip;</script>
+		<script src="js/jquery_ui.min.js"></script>
+		<script>jQuery.fn.tooltip = _tooltip;</script>
+		<script src="js/grid_stack_pack.min.js"></script>
+
+		<script src="js/plugins/colorpicker/bootstrap-colorpicker-plus.min.js"></script><!-- ColorPicker -->
+		<script src="js/plugins/jquery_confirm/jquery_confirm.js"></script><!-- Confirm -->
+		<script src="js/plugins/toaster/jquery.toaster.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.js"></script><!-- Summer Note -->
+
+
+		<script src="js/script.js"></script><!-- Common Scripts -->
+
+
+		<!-- Pagelevel Initializations Of Plugins -->
+		<script src="js/page-level/summernote/demo1.js"></script>
+
+	</body>
+	</html>
